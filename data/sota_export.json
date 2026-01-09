@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-01-09T09:11:32.492366",
+  "exported_at": "2026-01-09T09:52:48.590887",
   "model_count": 138,
   "models": [
     {
@@ -447,8 +447,8 @@
       "is_open_source": 0,
       "sota_rank": 1,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1303, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890051"
+      "metrics": "{\"elo\": 1303, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644806"
     },
     {
       "id": "claude-opus-4-5-20251101-thinking-32k",
@@ -461,8 +461,8 @@
       "is_open_source": 0,
       "sota_rank": 1,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1512, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.889973"
+      "metrics": "{\"elo\": 1512, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644703"
     },
     {
       "id": "chatgpt-image-latest-(20251216)",
@@ -475,8 +475,8 @@
       "is_open_source": 0,
       "sota_rank": 1,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1417, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890183"
+      "metrics": "{\"elo\": 1417, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644950"
     },
     {
       "id": "gpt-5-2-(xhigh)",
@@ -489,8 +489,8 @@
       "is_open_source": 0,
       "sota_rank": 1,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:11:32.435389\"}",
-      "last_updated": "2026-01-09T09:11:32.471571"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
+      "last_updated": "2026-01-09T09:52:48.578905"
     },
     {
       "id": "gpt-4.5",
@@ -517,8 +517,8 @@
       "is_open_source": 0,
       "sota_rank": 2,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1276, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890057"
+      "metrics": "{\"elo\": 1276, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644813"
     },
     {
       "id": "gpt-5-2-high",
@@ -531,8 +531,8 @@
       "is_open_source": 0,
       "sota_rank": 2,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1480, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.889980"
+      "metrics": "{\"elo\": 1480, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644712"
     },
     {
       "id": "gemini-3-pro-image-preview-2k-(nano-banana-pro)",
@@ -545,8 +545,8 @@
       "is_open_source": 0,
       "sota_rank": 2,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1405, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890189"
+      "metrics": "{\"elo\": 1405, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644957"
     },
     {
       "id": "gemini-2.0-pro",
@@ -573,8 +573,8 @@
       "is_open_source": 0,
       "sota_rank": 3,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1477, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.889910"
+      "metrics": "{\"elo\": 1477, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644624"
     },
     {
       "id": "claude-opus-4-5-20251101",
@@ -587,8 +587,8 @@
       "is_open_source": 0,
       "sota_rank": 3,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1479, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.889987"
+      "metrics": "{\"elo\": 1479, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644723"
     },
     {
       "id": "gemini-3-flash-(thinking-minimal)",
@@ -601,8 +601,8 @@
       "is_open_source": 0,
       "sota_rank": 3,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1264, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890064"
+      "metrics": "{\"elo\": 1264, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644820"
     },
     {
       "id": "gpt-image-1-5",
@@ -615,8 +615,8 @@
       "is_open_source": 0,
       "sota_rank": 3,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1403, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890195"
+      "metrics": "{\"elo\": 1403, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644964"
     },
     {
       "id": "gemini-3-pro-preview-(high)",
@@ -629,8 +629,8 @@
       "is_open_source": 0,
       "sota_rank": 3,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:11:32.435389\"}",
-      "last_updated": "2026-01-09T09:11:32.471796"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
+      "last_updated": "2026-01-09T09:52:48.579082"
     },
     {
       "id": "grok-4.1",
@@ -657,8 +657,8 @@
       "is_open_source": 0,
       "sota_rank": 4,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1249, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890071"
+      "metrics": "{\"elo\": 1249, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644827"
     },
     {
       "id": "gemini-3-pro-image-preview-(nano-banana-pro)",
@@ -671,8 +671,8 @@
       "is_open_source": 0,
       "sota_rank": 4,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1400, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890203"
+      "metrics": "{\"elo\": 1400, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644972"
     },
     {
       "id": "flux-2-max",
@@ -685,8 +685,8 @@
       "is_open_source": 1,
       "sota_rank": 4,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1167, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890137"
+      "metrics": "{\"elo\": 1167, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644898"
     },
     {
       "id": "gpt-5-1-(high)",
@@ -699,8 +699,8 @@
       "is_open_source": 0,
       "sota_rank": 4,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:11:32.435389\"}",
-      "last_updated": "2026-01-09T09:11:32.471804"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
+      "last_updated": "2026-01-09T09:52:48.579090"
     },
     {
       "id": "deepseek-v3-api",
@@ -727,8 +727,8 @@
       "is_open_source": 0,
       "sota_rank": 5,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1248, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890077"
+      "metrics": "{\"elo\": 1248, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644833"
     },
     {
       "id": "seedream-4-5",
@@ -741,8 +741,8 @@
       "is_open_source": 1,
       "sota_rank": 5,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1331, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890209"
+      "metrics": "{\"elo\": 1331, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644978"
     },
     {
       "id": "mistral-large-api",
@@ -769,8 +769,8 @@
       "is_open_source": 0,
       "sota_rank": 6,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1466, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.889938"
+      "metrics": "{\"elo\": 1466, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644655"
     },
     {
       "id": "minimax-m2-1-preview",
@@ -783,8 +783,8 @@
       "is_open_source": 1,
       "sota_rank": 6,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1445, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890008"
+      "metrics": "{\"elo\": 1445, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644753"
     },
     {
       "id": "gpt-5-1",
@@ -797,8 +797,8 @@
       "is_open_source": 0,
       "sota_rank": 6,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1238, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890084"
+      "metrics": "{\"elo\": 1238, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644841"
     },
     {
       "id": "gemini-2-5-flash-image-preview-(nano-banana)",
@@ -811,8 +811,8 @@
       "is_open_source": 0,
       "sota_rank": 6,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1322, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890215"
+      "metrics": "{\"elo\": 1322, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644986"
     },
     {
       "id": "flux-2-flex",
@@ -825,8 +825,8 @@
       "is_open_source": 1,
       "sota_rank": 6,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1155, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890150"
+      "metrics": "{\"elo\": 1155, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644911"
     },
     {
       "id": "gpt-5-2-(medium)",
@@ -839,8 +839,8 @@
       "is_open_source": 0,
       "sota_rank": 6,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:11:32.435389\"}",
-      "last_updated": "2026-01-09T09:11:32.471819"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
+      "last_updated": "2026-01-09T09:52:48.579100"
     },
     {
       "id": "llama-3.3-together",
@@ -867,8 +867,8 @@
       "is_open_source": 1,
       "sota_rank": 7,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1441, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890015"
+      "metrics": "{\"elo\": 1441, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644761"
     },
     {
       "id": "chatgpt-4o-latest-20250326",
@@ -881,8 +881,8 @@
       "is_open_source": 0,
       "sota_rank": 7,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1236, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890091"
+      "metrics": "{\"elo\": 1236, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644848"
     },
     {
       "id": "flux-2-pro",
@@ -895,8 +895,8 @@
       "is_open_source": 1,
       "sota_rank": 7,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1152, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890157"
+      "metrics": "{\"elo\": 1152, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644919"
     },
     {
       "id": "seedream-4-2k",
@@ -909,8 +909,8 @@
       "is_open_source": 1,
       "sota_rank": 7,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1312, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890222"
+      "metrics": "{\"elo\": 1312, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644994"
     },
     {
       "id": "claude-opus-4-5",
@@ -923,8 +923,8 @@
       "is_open_source": 0,
       "sota_rank": 7,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:11:32.435389\"}",
-      "last_updated": "2026-01-09T09:11:32.471829"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
+      "last_updated": "2026-01-09T09:52:48.579107"
     },
     {
       "id": "gpt-5-medium",
@@ -937,8 +937,8 @@
       "is_open_source": 0,
       "sota_rank": 8,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1395, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890022"
+      "metrics": "{\"elo\": 1395, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644771"
     },
     {
       "id": "ernie-5-0-preview-1220",
@@ -951,8 +951,8 @@
       "is_open_source": 1,
       "sota_rank": 8,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1226, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890098"
+      "metrics": "{\"elo\": 1226, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644855"
     },
     {
       "id": "hunyuan-image-3-0",
@@ -965,8 +965,8 @@
       "is_open_source": 1,
       "sota_rank": 8,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1151, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890163"
+      "metrics": "{\"elo\": 1151, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644926"
     },
     {
       "id": "reve-v1-1",
@@ -979,8 +979,8 @@
       "is_open_source": 1,
       "sota_rank": 8,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1261, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890229"
+      "metrics": "{\"elo\": 1261, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.645004"
     },
     {
       "id": "gpt-5-2",
@@ -993,8 +993,8 @@
       "is_open_source": 0,
       "sota_rank": 9,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1394, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890029"
+      "metrics": "{\"elo\": 1394, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644781"
     },
     {
       "id": "gpt-4-5-preview-2025-02-27",
@@ -1007,8 +1007,8 @@
       "is_open_source": 0,
       "sota_rank": 9,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1225, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890104"
+      "metrics": "{\"elo\": 1225, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644861"
     },
     {
       "id": "claude-sonnet-4-5-20250929-thinking-32k",
@@ -1021,8 +1021,8 @@
       "is_open_source": 0,
       "sota_rank": 10,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1391, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890044"
+      "metrics": "{\"elo\": 1391, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644800"
     },
     {
       "id": "gpt-5-chat",
@@ -1035,8 +1035,8 @@
       "is_open_source": 0,
       "sota_rank": 10,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1223, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890110"
+      "metrics": "{\"elo\": 1223, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644868"
     },
     {
       "id": "imagen-4-0-ultra-generate-preview-06-06",
@@ -1049,8 +1049,8 @@
       "is_open_source": 0,
       "sota_rank": 10,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1144, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890177"
+      "metrics": "{\"elo\": 1144, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.644942"
     },
     {
       "id": "reve-v1",
@@ -1063,8 +1063,8 @@
       "is_open_source": 1,
       "sota_rank": 10,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1249, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:11:26.868291\"}",
-      "last_updated": "2026-01-09T09:11:26.890245"
+      "metrics": "{\"elo\": 1249, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
+      "last_updated": "2026-01-09T09:52:41.645026"
     },
     {
       "id": "gpt-5-1-codex-(high)",
@@ -1077,8 +1077,8 @@
       "is_open_source": 0,
       "sota_rank": 10,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:11:32.435389\"}",
-      "last_updated": "2026-01-09T09:11:32.471849"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
+      "last_updated": "2026-01-09T09:52:48.579123"
     },
     {
       "id": "grok-4",
@@ -1091,8 +1091,8 @@
       "is_open_source": 0,
       "sota_rank": 11,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:11:32.435389\"}",
-      "last_updated": "2026-01-09T09:11:32.471856"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
+      "last_updated": "2026-01-09T09:52:48.579130"
     },
     {
       "id": "deepseek-v3-2",
@@ -1105,8 +1105,8 @@
       "is_open_source": 1,
       "sota_rank": 12,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:11:32.435389\"}",
-      "last_updated": "2026-01-09T09:11:32.471863"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
+      "last_updated": "2026-01-09T09:52:48.579137"
     },
     {
       "id": "o3",
@@ -1119,8 +1119,8 @@
       "is_open_source": 1,
       "sota_rank": 13,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:11:32.435389\"}",
-      "last_updated": "2026-01-09T09:11:32.471870"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
+      "last_updated": "2026-01-09T09:52:48.579144"
     },
     {
       "id": "gpt-5-mini-(high)",
@@ -1133,8 +1133,8 @@
       "is_open_source": 0,
       "sota_rank": 14,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:11:32.435389\"}",
-      "last_updated": "2026-01-09T09:11:32.471876"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
+      "last_updated": "2026-01-09T09:52:48.579150"
     },
     {
       "id": "gemini-3-pro-preview-(low)",
@@ -1147,8 +1147,8 @@
       "is_open_source": 0,
       "sota_rank": 15,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:11:32.435389\"}",
-      "last_updated": "2026-01-09T09:11:32.471883"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
+      "last_updated": "2026-01-09T09:52:48.579157"
     },
     {
       "id": "kimi-k2-thinking",
@@ -1161,8 +1161,8 @@
       "is_open_source": 1,
       "sota_rank": 16,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:11:32.435389\"}",
-      "last_updated": "2026-01-09T09:11:32.471890"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
+      "last_updated": "2026-01-09T09:52:48.579164"
     },
     {
       "id": "minimax-m2-1",
@@ -1175,8 +1175,8 @@
       "is_open_source": 1,
       "sota_rank": 17,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:11:32.435389\"}",
-      "last_updated": "2026-01-09T09:11:32.471896"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
+      "last_updated": "2026-01-09T09:52:48.579170"
     },
     {
       "id": "mimo-v2-flash",
@@ -1189,8 +1189,8 @@
       "is_open_source": 1,
       "sota_rank": 18,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:11:32.435389\"}",
-      "last_updated": "2026-01-09T09:11:32.471906"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
+      "last_updated": "2026-01-09T09:52:48.579178"
     },
     {
       "id": "grok-4-1-fast",
@@ -1203,8 +1203,8 @@
       "is_open_source": 0,
       "sota_rank": 19,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:11:32.435389\"}",
-      "last_updated": "2026-01-09T09:11:32.471923"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
+      "last_updated": "2026-01-09T09:52:48.579191"
     },
     {
       "id": "gpt-5-1-codex-mini-(high)",
@@ -1217,8 +1217,8 @@
       "is_open_source": 0,
       "sota_rank": 20,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:11:32.435389\"}",
-      "last_updated": "2026-01-09T09:11:32.471931"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
+      "last_updated": "2026-01-09T09:52:48.579197"
     },
     {
       "id": "claude-4-5-sonnet",
@@ -1231,8 +1231,8 @@
       "is_open_source": 0,
       "sota_rank": 21,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:11:32.435389\"}",
-      "last_updated": "2026-01-09T09:11:32.471937"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
+      "last_updated": "2026-01-09T09:52:48.579203"
     },
     {
       "id": "claude-4-5-haiku",
@@ -1245,8 +1245,8 @@
       "is_open_source": 0,
       "sota_rank": 22,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:11:32.435389\"}",
-      "last_updated": "2026-01-09T09:11:32.471944"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
+      "last_updated": "2026-01-09T09:52:48.579210"
     },
     {
       "id": "kat-coder-pro-v1",
@@ -1259,8 +1259,8 @@
       "is_open_source": 1,
       "sota_rank": 23,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:11:32.435389\"}",
-      "last_updated": "2026-01-09T09:11:32.471950"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
+      "last_updated": "2026-01-09T09:52:48.579216"
     },
     {
       "id": "minimax-m2",
@@ -1273,8 +1273,8 @@
       "is_open_source": 1,
       "sota_rank": 24,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:11:32.435389\"}",
-      "last_updated": "2026-01-09T09:11:32.471956"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
+      "last_updated": "2026-01-09T09:52:48.579222"
     },
     {
       "id": "nova-2-0-pro-preview-(medium)",
@@ -1287,8 +1287,8 @@
       "is_open_source": 1,
       "sota_rank": 25,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:11:32.435389\"}",
-      "last_updated": "2026-01-09T09:11:32.471962"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
+      "last_updated": "2026-01-09T09:52:48.579229"
     },
     {
       "id": "grok-4-fast",
@@ -1301,8 +1301,8 @@
       "is_open_source": 0,
       "sota_rank": 27,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:11:32.435389\"}",
-      "last_updated": "2026-01-09T09:11:32.471970"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
+      "last_updated": "2026-01-09T09:52:48.579236"
     },
     {
       "id": "deepseek-v3-2-speciale",
@@ -1315,8 +1315,8 @@
       "is_open_source": 1,
       "sota_rank": 29,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:11:32.435389\"}",
-      "last_updated": "2026-01-09T09:11:32.471981"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
+      "last_updated": "2026-01-09T09:52:48.579246"
     },
     {
       "id": "qwen3-coder",

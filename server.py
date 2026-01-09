@@ -34,6 +34,8 @@ from typing import Optional
 
 from fastmcp import FastMCP
 
+from utils.db import get_db as _get_db
+
 # Smart caching - refresh data if stale (not fetched today)
 try:
     from fetchers.cache_manager import get_cache_manager
@@ -73,9 +75,7 @@ mcp = FastMCP(
 
 def get_db():
     """Get database connection with row factory."""
-    db = sqlite3.connect(str(DB_PATH))
-    db.row_factory = sqlite3.Row
-    return db
+    return _get_db(DB_PATH)
 
 
 def load_forbidden():
@@ -151,7 +151,10 @@ def _query_sota_impl(category: str, open_source_only: bool = True) -> str:
         result.append("(Showing open-source only. Use open_source_only=False for all models.)\n")
 
     for row in rows:
-        metrics = json.loads(row["metrics"]) if row["metrics"] else {}
+        try:
+            metrics = json.loads(row["metrics"]) if row["metrics"] else {}
+        except json.JSONDecodeError:
+            metrics = {}
         notes = metrics.get("notes", "")
         why_sota = metrics.get("why_sota", "")
         strengths = metrics.get("strengths", [])
@@ -326,6 +329,10 @@ def _compare_models_impl(model_a: str, model_b: str) -> str:
 
 def _recent_releases_impl(days: int = 30, open_source_only: bool = True) -> str:
     """Implementation of recent_releases."""
+    # Input validation
+    if not isinstance(days, int) or days < 1 or days > 365:
+        return "Error: days must be an integer between 1 and 365"
+
     db = get_db()
 
     cutoff = (datetime.now() - timedelta(days=days)).strftime("%Y-%m-%d")

@@ -30,69 +30,69 @@ z-image-turbo,Z-Image-Turbo,image_gen,1,3,2025-11-26,manual,2026-01-09 14:03:48
 flux2-dev,FLUX.2-dev,image_gen,1,4,2025-11-25,manual,2026-01-09 14:03:48
 qwen-image-2512,"Qwen Image (Alibaba, Dec 2025)",image_gen,1,5,2025-12-31,manual,2026-01-09 14:03:48
 claude-opus-4.5,Claude Opus 4.5,llm_api,0,1,2025-11-01,manual,2026-01-09 14:03:48
-gemini-3-pro,gemini-3-pro,llm_api,0,1,,lmarena,2026-01-09T09:11:26.890051
-claude-opus-4-5-20251101-thinking-32k,claude-opus-4-5-20251101-thinking-32k,llm_api,0,1,,lmarena,2026-01-09T09:11:26.889973
-chatgpt-image-latest-(20251216),chatgpt-image-latest (20251216),llm_api,0,1,,lmarena,2026-01-09T09:11:26.890183
-gpt-5-2-(xhigh),GPT-5.2 (xhigh),llm_api,0,1,,artificial_analysis,2026-01-09T09:11:32.471571
+gemini-3-pro,gemini-3-pro,llm_api,0,1,,lmarena,2026-01-09T09:52:41.644806
+claude-opus-4-5-20251101-thinking-32k,claude-opus-4-5-20251101-thinking-32k,llm_api,0,1,,lmarena,2026-01-09T09:52:41.644703
+chatgpt-image-latest-(20251216),chatgpt-image-latest (20251216),llm_api,0,1,,lmarena,2026-01-09T09:52:41.644950
+gpt-5-2-(xhigh),GPT-5.2 (xhigh),llm_api,0,1,,artificial_analysis,2026-01-09T09:52:48.578905
 gpt-4.5,GPT-4.5,llm_api,0,2,2025-10-01,manual,2026-01-09 14:03:48
-gemini-3-flash,gemini-3-flash,llm_api,0,2,,lmarena,2026-01-09T09:11:26.890057
-gpt-5-2-high,gpt-5.2-high,llm_api,0,2,,lmarena,2026-01-09T09:11:26.889980
-gemini-3-pro-image-preview-2k-(nano-banana-pro),gemini-3-pro-image-preview-2k (nano-banana-pro),llm_api,0,2,,lmarena,2026-01-09T09:11:26.890189
+gemini-3-flash,gemini-3-flash,llm_api,0,2,,lmarena,2026-01-09T09:52:41.644813
+gpt-5-2-high,gpt-5.2-high,llm_api,0,2,,lmarena,2026-01-09T09:52:41.644712
+gemini-3-pro-image-preview-2k-(nano-banana-pro),gemini-3-pro-image-preview-2k (nano-banana-pro),llm_api,0,2,,lmarena,2026-01-09T09:52:41.644957
 gemini-2.0-pro,Gemini 2.0 Pro,llm_api,0,3,2025-12-01,manual,2026-01-09 14:03:48
-grok-4-1-thinking,grok-4.1-thinking,llm_api,0,3,,lmarena,2026-01-09T09:11:26.889910
-claude-opus-4-5-20251101,claude-opus-4-5-20251101,llm_api,0,3,,lmarena,2026-01-09T09:11:26.889987
-gemini-3-flash-(thinking-minimal),gemini-3-flash (thinking-minimal),llm_api,0,3,,lmarena,2026-01-09T09:11:26.890064
-gpt-image-1-5,gpt-image-1.5,llm_api,0,3,,lmarena,2026-01-09T09:11:26.890195
-gemini-3-pro-preview-(high),Gemini 3 Pro Preview (high),llm_api,0,3,,artificial_analysis,2026-01-09T09:11:32.471796
+grok-4-1-thinking,grok-4.1-thinking,llm_api,0,3,,lmarena,2026-01-09T09:52:41.644624
+claude-opus-4-5-20251101,claude-opus-4-5-20251101,llm_api,0,3,,lmarena,2026-01-09T09:52:41.644723
+gemini-3-flash-(thinking-minimal),gemini-3-flash (thinking-minimal),llm_api,0,3,,lmarena,2026-01-09T09:52:41.644820
+gpt-image-1-5,gpt-image-1.5,llm_api,0,3,,lmarena,2026-01-09T09:52:41.644964
+gemini-3-pro-preview-(high),Gemini 3 Pro Preview (high),llm_api,0,3,,artificial_analysis,2026-01-09T09:52:48.579082
 grok-4.1,Grok 4.1 (xAI),llm_api,0,4,2025-11-01,manual,2026-01-09 14:03:48
-gemini-2-5-pro,gemini-2.5-pro,llm_api,0,4,,lmarena,2026-01-09T09:11:26.890071
-gemini-3-pro-image-preview-(nano-banana-pro),gemini-3-pro-image-preview (nano-banana-pro),llm_api,0,4,,lmarena,2026-01-09T09:11:26.890203
-flux-2-max,flux-2-max,llm_api,1,4,,lmarena,2026-01-09T09:11:26.890137
-gpt-5-1-(high),GPT-5.1 (high),llm_api,0,4,,artificial_analysis,2026-01-09T09:11:32.471804
+gemini-2-5-pro,gemini-2.5-pro,llm_api,0,4,,lmarena,2026-01-09T09:52:41.644827
+gemini-3-pro-image-preview-(nano-banana-pro),gemini-3-pro-image-preview (nano-banana-pro),llm_api,0,4,,lmarena,2026-01-09T09:52:41.644972
+flux-2-max,flux-2-max,llm_api,1,4,,lmarena,2026-01-09T09:52:41.644898
+gpt-5-1-(high),GPT-5.1 (high),llm_api,0,4,,artificial_analysis,2026-01-09T09:52:48.579090
 deepseek-v3-api,DeepSeek V3 API (DeepSeek),llm_api,1,5,2025-12-25,manual,2026-01-09 14:03:48
-gpt-5-1-high,gpt-5.1-high,llm_api,0,5,,lmarena,2026-01-09T09:11:26.890077
-seedream-4-5,seedream-4.5,llm_api,1,5,,lmarena,2026-01-09T09:11:26.890209
+gpt-5-1-high,gpt-5.1-high,llm_api,0,5,,lmarena,2026-01-09T09:52:41.644833
+seedream-4-5,seedream-4.5,llm_api,1,5,,lmarena,2026-01-09T09:52:41.644978
 mistral-large-api,Mistral Large API (Mistral),llm_api,1,6,2025-09-01,manual,2026-01-09 14:03:48
-grok-4-1,grok-4.1,llm_api,0,6,,lmarena,2026-01-09T09:11:26.889938
-minimax-m2-1-preview,minimax-m2.1-preview,llm_api,1,6,,lmarena,2026-01-09T09:11:26.890008
-gpt-5-1,gpt-5.1,llm_api,0,6,,lmarena,2026-01-09T09:11:26.890084
-gemini-2-5-flash-image-preview-(nano-banana),gemini-2.5-flash-image-preview (nano-banana),llm_api,0,6,,lmarena,2026-01-09T09:11:26.890215
-flux-2-flex,flux-2-flex,llm_api,1,6,,lmarena,2026-01-09T09:11:26.890150
-gpt-5-2-(medium),GPT-5.2 (medium),llm_api,0,6,,artificial_analysis,2026-01-09T09:11:32.471819
+grok-4-1,grok-4.1,llm_api,0,6,,lmarena,2026-01-09T09:52:41.644655
+minimax-m2-1-preview,minimax-m2.1-preview,llm_api,1,6,,lmarena,2026-01-09T09:52:41.644753
+gpt-5-1,gpt-5.1,llm_api,0,6,,lmarena,2026-01-09T09:52:41.644841
+gemini-2-5-flash-image-preview-(nano-banana),gemini-2.5-flash-image-preview (nano-banana),llm_api,0,6,,lmarena,2026-01-09T09:52:41.644986
+flux-2-flex,flux-2-flex,llm_api,1,6,,lmarena,2026-01-09T09:52:41.644911
+gpt-5-2-(medium),GPT-5.2 (medium),llm_api,0,6,,artificial_analysis,2026-01-09T09:52:48.579100
 llama-3.3-together,Llama 3.3-70B via Together.ai,llm_api,1,7,2025-12-01,manual,2026-01-09 14:03:48
-glm-4-7,glm-4.7,llm_api,1,7,,lmarena,2026-01-09T09:11:26.890015
-chatgpt-4o-latest-20250326,chatgpt-4o-latest-20250326,llm_api,0,7,,lmarena,2026-01-09T09:11:26.890091
-flux-2-pro,flux-2-pro,llm_api,1,7,,lmarena,2026-01-09T09:11:26.890157
-seedream-4-2k,seedream-4-2k,llm_api,1,7,,lmarena,2026-01-09T09:11:26.890222
-claude-opus-4-5,Claude Opus 4.5,llm_api,0,7,,artificial_analysis,2026-01-09T09:11:32.471829
-gpt-5-medium,gpt-5-medium,llm_api,0,8,,lmarena,2026-01-09T09:11:26.890022
-ernie-5-0-preview-1220,ernie-5.0-preview-1220,llm_api,1,8,,lmarena,2026-01-09T09:11:26.890098
-hunyuan-image-3-0,hunyuan-image-3.0,llm_api,1,8,,lmarena,2026-01-09T09:11:26.890163
-reve-v1-1,reve-v1.1,llm_api,1,8,,lmarena,2026-01-09T09:11:26.890229
-gpt-5-2,gpt-5.2,llm_api,0,9,,lmarena,2026-01-09T09:11:26.890029
-gpt-4-5-preview-2025-02-27,gpt-4.5-preview-2025-02-27,llm_api,0,9,,lmarena,2026-01-09T09:11:26.890104
-claude-sonnet-4-5-20250929-thinking-32k,claude-sonnet-4-5-20250929-thinking-32k,llm_api,0,10,,lmarena,2026-01-09T09:11:26.890044
-gpt-5-chat,gpt-5-chat,llm_api,0,10,,lmarena,2026-01-09T09:11:26.890110
-imagen-4-0-ultra-generate-preview-06-06,imagen-4.0-ultra-generate-preview-06-06,llm_api,0,10,,lmarena,2026-01-09T09:11:26.890177
-reve-v1,reve-v1,llm_api,1,10,,lmarena,2026-01-09T09:11:26.890245
-gpt-5-1-codex-(high),GPT-5.1 Codex (high),llm_api,0,10,,artificial_analysis,2026-01-09T09:11:32.471849
-grok-4,Grok 4,llm_api,0,11,,artificial_analysis,2026-01-09T09:11:32.471856
-deepseek-v3-2,DeepSeek V3.2,llm_api,1,12,,artificial_analysis,2026-01-09T09:11:32.471863
-o3,o3,llm_api,1,13,,artificial_analysis,2026-01-09T09:11:32.471870
-gpt-5-mini-(high),GPT-5 mini (high),llm_api,0,14,,artificial_analysis,2026-01-09T09:11:32.471876
-gemini-3-pro-preview-(low),Gemini 3 Pro Preview (low),llm_api,0,15,,artificial_analysis,2026-01-09T09:11:32.471883
-kimi-k2-thinking,Kimi K2 Thinking,llm_api,1,16,,artificial_analysis,2026-01-09T09:11:32.471890
-minimax-m2-1,MiniMax-M2.1,llm_api,1,17,,artificial_analysis,2026-01-09T09:11:32.471896
-mimo-v2-flash,MiMo-V2-Flash,llm_api,1,18,,artificial_analysis,2026-01-09T09:11:32.471906
-grok-4-1-fast,Grok 4.1 Fast,llm_api,0,19,,artificial_analysis,2026-01-09T09:11:32.471923
-gpt-5-1-codex-mini-(high),GPT-5.1 Codex mini (high),llm_api,0,20,,artificial_analysis,2026-01-09T09:11:32.471931
-claude-4-5-sonnet,Claude 4.5 Sonnet,llm_api,0,21,,artificial_analysis,2026-01-09T09:11:32.471937
-claude-4-5-haiku,Claude 4.5 Haiku,llm_api,0,22,,artificial_analysis,2026-01-09T09:11:32.471944
-kat-coder-pro-v1,KAT-Coder-Pro V1,llm_api,1,23,,artificial_analysis,2026-01-09T09:11:32.471950
-minimax-m2,MiniMax-M2,llm_api,1,24,,artificial_analysis,2026-01-09T09:11:32.471956
-nova-2-0-pro-preview-(medium),Nova 2.0 Pro Preview (medium),llm_api,1,25,,artificial_analysis,2026-01-09T09:11:32.471962
-grok-4-fast,Grok 4 Fast,llm_api,0,27,,artificial_analysis,2026-01-09T09:11:32.471970
-deepseek-v3-2-speciale,DeepSeek V3.2 Speciale,llm_api,1,29,,artificial_analysis,2026-01-09T09:11:32.471981
+glm-4-7,glm-4.7,llm_api,1,7,,lmarena,2026-01-09T09:52:41.644761
+chatgpt-4o-latest-20250326,chatgpt-4o-latest-20250326,llm_api,0,7,,lmarena,2026-01-09T09:52:41.644848
+flux-2-pro,flux-2-pro,llm_api,1,7,,lmarena,2026-01-09T09:52:41.644919
+seedream-4-2k,seedream-4-2k,llm_api,1,7,,lmarena,2026-01-09T09:52:41.644994
+claude-opus-4-5,Claude Opus 4.5,llm_api,0,7,,artificial_analysis,2026-01-09T09:52:48.579107
+gpt-5-medium,gpt-5-medium,llm_api,0,8,,lmarena,2026-01-09T09:52:41.644771
+ernie-5-0-preview-1220,ernie-5.0-preview-1220,llm_api,1,8,,lmarena,2026-01-09T09:52:41.644855
+hunyuan-image-3-0,hunyuan-image-3.0,llm_api,1,8,,lmarena,2026-01-09T09:52:41.644926
+reve-v1-1,reve-v1.1,llm_api,1,8,,lmarena,2026-01-09T09:52:41.645004
+gpt-5-2,gpt-5.2,llm_api,0,9,,lmarena,2026-01-09T09:52:41.644781
+gpt-4-5-preview-2025-02-27,gpt-4.5-preview-2025-02-27,llm_api,0,9,,lmarena,2026-01-09T09:52:41.644861
+claude-sonnet-4-5-20250929-thinking-32k,claude-sonnet-4-5-20250929-thinking-32k,llm_api,0,10,,lmarena,2026-01-09T09:52:41.644800
+gpt-5-chat,gpt-5-chat,llm_api,0,10,,lmarena,2026-01-09T09:52:41.644868
+imagen-4-0-ultra-generate-preview-06-06,imagen-4.0-ultra-generate-preview-06-06,llm_api,0,10,,lmarena,2026-01-09T09:52:41.644942
+reve-v1,reve-v1,llm_api,1,10,,lmarena,2026-01-09T09:52:41.645026
+gpt-5-1-codex-(high),GPT-5.1 Codex (high),llm_api,0,10,,artificial_analysis,2026-01-09T09:52:48.579123
+grok-4,Grok 4,llm_api,0,11,,artificial_analysis,2026-01-09T09:52:48.579130
+deepseek-v3-2,DeepSeek V3.2,llm_api,1,12,,artificial_analysis,2026-01-09T09:52:48.579137
+o3,o3,llm_api,1,13,,artificial_analysis,2026-01-09T09:52:48.579144
+gpt-5-mini-(high),GPT-5 mini (high),llm_api,0,14,,artificial_analysis,2026-01-09T09:52:48.579150
+gemini-3-pro-preview-(low),Gemini 3 Pro Preview (low),llm_api,0,15,,artificial_analysis,2026-01-09T09:52:48.579157
+kimi-k2-thinking,Kimi K2 Thinking,llm_api,1,16,,artificial_analysis,2026-01-09T09:52:48.579164
+minimax-m2-1,MiniMax-M2.1,llm_api,1,17,,artificial_analysis,2026-01-09T09:52:48.579170
+mimo-v2-flash,MiMo-V2-Flash,llm_api,1,18,,artificial_analysis,2026-01-09T09:52:48.579178
+grok-4-1-fast,Grok 4.1 Fast,llm_api,0,19,,artificial_analysis,2026-01-09T09:52:48.579191
+gpt-5-1-codex-mini-(high),GPT-5.1 Codex mini (high),llm_api,0,20,,artificial_analysis,2026-01-09T09:52:48.579197
+claude-4-5-sonnet,Claude 4.5 Sonnet,llm_api,0,21,,artificial_analysis,2026-01-09T09:52:48.579203
+claude-4-5-haiku,Claude 4.5 Haiku,llm_api,0,22,,artificial_analysis,2026-01-09T09:52:48.579210
+kat-coder-pro-v1,KAT-Coder-Pro V1,llm_api,1,23,,artificial_analysis,2026-01-09T09:52:48.579216
+minimax-m2,MiniMax-M2,llm_api,1,24,,artificial_analysis,2026-01-09T09:52:48.579222
+nova-2-0-pro-preview-(medium),Nova 2.0 Pro Preview (medium),llm_api,1,25,,artificial_analysis,2026-01-09T09:52:48.579229
+grok-4-fast,Grok 4 Fast,llm_api,0,27,,artificial_analysis,2026-01-09T09:52:48.579236
+deepseek-v3-2-speciale,DeepSeek V3.2 Speciale,llm_api,1,29,,artificial_analysis,2026-01-09T09:52:48.579246
 qwen3-coder,Qwen 3 Coder (Alibaba),llm_coding,1,1,2026-01-01,manual,2026-01-09 14:03:48
 deepseek-v3-coder,DeepSeek V3 (DeepSeek),llm_coding,1,2,2025-12-25,manual,2026-01-09 14:03:48
 claude-opus-4.5-coding,Claude Opus 4.5,llm_coding,0,3,2025-11-01,manual,2026-01-09 14:03:48

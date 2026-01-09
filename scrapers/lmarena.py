@@ -9,9 +9,15 @@ a real browser to extract the data.
 
 import json
 import re
+import sys
 from datetime import datetime
+from pathlib import Path
 from typing import Optional
 from playwright.sync_api import sync_playwright, Page, TimeoutError as PlaywrightTimeout
+
+# Add parent to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from utils.classification import is_open_source
 
 
 class LMArenaScraper:
@@ -115,7 +121,7 @@ class LMArenaScraper:
                             "rank": rank,
                             "name": name,
                             "elo": elo,
-                            "is_open_source": self._is_open_source(name),
+                            "is_open_source": is_open_source(name),
                             "category": "llm_api",
                         })
             except Exception as e:
@@ -167,32 +173,12 @@ class LMArenaScraper:
                         "rank": int(rank),
                         "name": name,
                         "elo": int(elo),
-                        "is_open_source": self._is_open_source(name),
+                        "is_open_source": is_open_source(name),
                         "category": "llm_api",
                     })
 
         return models
 
-    def _is_open_source(self, model_name: str) -> bool:
-        """Determine if a model is open-source based on name."""
-        closed_patterns = [
-            # OpenAI (catch-all patterns first)
-            "gpt-", "gpt4", "gpt5", "chatgpt", "openai",
-            "o1-", "o1_", "o3-", "o3_", "dall-e", "dall_e",
-            # Anthropic
-            "claude",
-            # Google
-            "gemini", "bard", "palm", "imagen", "veo",
-            # xAI
-            "grok",
-            # Microsoft
-            "copilot",
-            # Other closed
-            "midjourney", "runway", "pika", "sora", "kling",
-            "elevenlabs", "suno", "udio"
-        ]
-        name_lower = model_name.lower()
-        return not any(p in name_lower for p in closed_patterns)
 
 
 def scrape_lmarena() -> dict:

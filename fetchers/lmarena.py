@@ -8,9 +8,15 @@ Source: https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard
 """
 
 import json
+import sys
 import urllib.request
 import urllib.error
+from pathlib import Path
 from typing import Optional
+
+# Add parent to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from utils.classification import is_open_source
 
 
 class LMArenaFetcher:
@@ -82,7 +88,7 @@ class LMArenaFetcher:
                     "id": name.lower().replace(" ", "-").replace("/", "-"),
                     "name": name,
                     "category": "llm_api",
-                    "is_open_source": self._is_open_source(name),
+                    "is_open_source": is_open_source(name),
                     "sota_rank": rank,
                     "metrics": {
                         "elo": elo,
@@ -99,7 +105,7 @@ class LMArenaFetcher:
                     "id": name.lower().replace(" ", "-").replace("/", "-"),
                     "name": name,
                     "category": "llm_api",
-                    "is_open_source": self._is_open_source(name),
+                    "is_open_source": is_open_source(name),
                     "sota_rank": rank,
                     "metrics": {
                         "elo": elo,
@@ -132,7 +138,7 @@ class LMArenaFetcher:
                     "id": name.lower().replace(" ", "-").replace("/", "-"),
                     "name": name,
                     "category": "llm_api",
-                    "is_open_source": self._is_open_source(name),
+                    "is_open_source": is_open_source(name),
                     "sota_rank": rank,
                     "metrics": {
                         "elo": elo,
@@ -143,24 +149,6 @@ class LMArenaFetcher:
 
         return models
 
-    def _is_open_source(self, model_name: str) -> bool:
-        """Heuristic to determine if model is open-source."""
-        closed_patterns = [
-            # OpenAI
-            "gpt-4", "gpt-3", "gpt-5", "gpt4", "gpt5", "chatgpt",
-            "o1-", "o1_", "o3-", "o3_", "dall-e",
-            # Anthropic
-            "claude",
-            # Google
-            "gemini", "palm", "bard", "imagen", "veo",
-            # xAI
-            "grok",
-            # Other closed
-            "copilot", "midjourney", "runway", "pika", "sora",
-            "kling", "elevenlabs", "suno", "udio"
-        ]
-        name_lower = model_name.lower()
-        return not any(p in name_lower for p in closed_patterns)
 
 
 # Quick test
