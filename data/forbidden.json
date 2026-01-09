@@ -1,0 +1,83 @@
+{
+  "models": [
+    {
+      "name": "FLUX.1-dev",
+      "reason": "Superseded by FLUX.2-dev (Nov 2025)",
+      "replacement": "FLUX.2-dev",
+      "category": "image_gen"
+    },
+    {
+      "name": "Redux",
+      "reason": "Ancient (Oct 2024), outdated approach",
+      "replacement": "Qwen-Image-Edit-2511",
+      "category": "image_edit"
+    },
+    {
+      "name": "IP-Adapter",
+      "reason": "Outdated approach, superseded by edit models",
+      "replacement": "Qwen-Image-Edit-2511 or FLUX.1-Kontext",
+      "category": "image_edit"
+    },
+    {
+      "name": "BAGEL",
+      "reason": "Outdated (May 2025)",
+      "replacement": "Qwen-Image-2512",
+      "category": "image_gen"
+    },
+    {
+      "name": "OmniGen2",
+      "reason": "Outdated (Jun 2025)",
+      "replacement": "Qwen-Image-2512 or Z-Image-Turbo",
+      "category": "image_gen"
+    },
+    {
+      "name": "Stable Diffusion 1.5",
+      "reason": "Ancient, significantly outperformed",
+      "replacement": "FLUX.2-dev or Z-Image-Turbo",
+      "category": "image_gen"
+    },
+    {
+      "name": "Stable Diffusion 2.0",
+      "reason": "Ancient, significantly outperformed",
+      "replacement": "FLUX.2-dev or Z-Image-Turbo",
+      "category": "image_gen"
+    },
+    {
+      "name": "Stable Diffusion XL",
+      "reason": "Outdated (2023), newer models are significantly better",
+      "replacement": "FLUX.2-dev or Z-Image-Turbo",
+      "category": "image_gen"
+    },
+    {
+      "name": "Llama 2",
+      "reason": "Superseded by Llama 3.x series",
+      "replacement": "Llama3.3-70B or Qwen2.5",
+      "category": "llm_local"
+    },
+    {
+      "name": "Mistral 7B v0.1",
+      "reason": "Outdated, Qwen2.5 is better at same size",
+      "replacement": "Qwen2.5-7B",
+      "category": "llm_local"
+    },
+    {
+      "name": "Whisper v2",
+      "reason": "Superseded by Whisper Large v3",
+      "replacement": "Whisper Large v3",
+      "category": "stt"
+    },
+    {
+      "name": "GPT-3.5",
+      "reason": "Significantly outperformed by GPT-4 series",
+      "replacement": "GPT-4.5 or Claude Opus 4.5",
+      "category": "llm_api"
+    },
+    {
+      "name": "Claude 2",
+      "reason": "Superseded by Claude 3.x and 4.x series",
+      "replacement": "Claude Opus 4.5",
+      "category": "llm_api"
+    }
+  ],
+  "last_updated": "2026-01-09"
+}
