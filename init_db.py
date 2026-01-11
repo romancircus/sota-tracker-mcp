@@ -413,10 +413,15 @@ def seed_sota_models(db: sqlite3.Connection):
 
         # =====================================================================
         # LOCAL LLMs (verified Jan 2026)
+        # is_uncensored: true for abliterated/JOSIEFIED variants, false for official
+        # uncensored_variant: HuggingFace repo for recommended uncensored version
+        # vram_gb: numeric VRAM for hardware-aware filtering
         # =====================================================================
+
+        # --- OFFICIAL MODELS (is_uncensored: false) ---
         {
-            "id": "qwen3",
-            "name": "Qwen 3 (Alibaba)",
+            "id": "qwen3-32b",
+            "name": "Qwen 3-32B",
             "category": "llm_local",
             "release_date": "2026-01-01",
             "is_sota": True,
@@ -424,10 +429,93 @@ def seed_sota_models(db: sqlite3.Connection):
             "sota_rank": 1,
             "sota_rank_open": 1,
             "metrics": {
-                "notes": "#1 local LLM (Alibaba Qwen team), beats DeepSeek-V3 and Llama 4 on MMLU/BBH",
-                "why_sota": "New benchmark leader with innovative hybrid reasoning that adapts to task complexity",
-                "strengths": ["Benchmark scores", "Hybrid reasoning", "Efficiency", "Multilingual"],
-                "use_cases": ["General assistant", "Complex reasoning", "Multilingual tasks", "Research"]
+                "notes": "#1 local LLM, best single-GPU model, beats GPT-4o on most benchmarks",
+                "why_sota": "New benchmark leader, fits RTX 4090/5090 with excellent quality",
+                "strengths": ["Benchmark scores", "Hybrid reasoning", "Single GPU", "Multilingual"],
+                "use_cases": ["Daily assistant", "Complex reasoning", "RTX 4090/5090 optimal"],
+                "vram_gb": 19,
+                "quantization": "Q4_K_M",
+                "is_uncensored": False,
+                "uncensored_variant": "mradermacher/Qwen3-32B-Uncensored-GGUF"
+            }
+        },
+        {
+            "id": "qwen3-30b-a3b",
+            "name": "Qwen 3-30B-A3B (MoE)",
+            "category": "llm_local",
+            "release_date": "2026-01-01",
+            "is_sota": True,
+            "is_open_source": True,
+            "sota_rank": 2,
+            "sota_rank_open": 2,
+            "metrics": {
+                "notes": "#2 local LLM, 30B MoE with only 3B active, extremely fast inference",
+                "why_sota": "Best speed/quality ratio, MoE efficiency lets it run alongside other GPU tasks",
+                "strengths": ["Speed", "MoE efficiency", "Low active VRAM", "Multi-tasking friendly"],
+                "use_cases": ["Interactive chat", "Running alongside image gen", "Real-time applications"],
+                "vram_gb": 18,
+                "quantization": "Q4_K_M",
+                "active_params": "3B",
+                "is_uncensored": False
+            }
+        },
+        {
+            "id": "qwen3-8b",
+            "name": "Qwen 3-8B",
+            "category": "llm_local",
+            "release_date": "2026-01-01",
+            "is_sota": True,
+            "is_open_source": True,
+            "sota_rank": 3,
+            "sota_rank_open": 3,
+            "metrics": {
+                "notes": "#3 local LLM, best small model, rivals larger 32B models from 2024",
+                "why_sota": "Incredible quality at 8B size, fits alongside image/video gen workloads",
+                "strengths": ["Small footprint", "Quality/size ratio", "Concurrent workloads", "Fast"],
+                "use_cases": ["Daily chat while running FLUX/Wan", "Laptops", "Edge devices"],
+                "vram_gb": 6,
+                "quantization": "Q5_K_M",
+                "is_uncensored": False,
+                "uncensored_variant": "mradermacher/Josiefied-Qwen3-8B-abliterated-v1-GGUF"
+            }
+        },
+        {
+            "id": "deepseek-r1-32b",
+            "name": "DeepSeek R1-32B (Reasoning)",
+            "category": "llm_local",
+            "release_date": "2025-12-01",
+            "is_sota": True,
+            "is_open_source": True,
+            "sota_rank": 4,
+            "sota_rank_open": 4,
+            "metrics": {
+                "notes": "#4 local LLM, specialized reasoning model, o1-level on math/logic",
+                "why_sota": "Best open-source reasoning model, excels at multi-step problems",
+                "strengths": ["Math reasoning", "Logic", "Chain-of-thought", "Problem solving"],
+                "use_cases": ["Complex reasoning", "Math problems", "Code debugging", "Analysis"],
+                "vram_gb": 22,
+                "quantization": "Q5_K_M",
+                "is_uncensored": False
+            }
+        },
+        {
+            "id": "qwq-32b",
+            "name": "QwQ-32B (Reasoning)",
+            "category": "llm_local",
+            "release_date": "2025-11-01",
+            "is_sota": True,
+            "is_open_source": True,
+            "sota_rank": 5,
+            "sota_rank_open": 5,
+            "metrics": {
+                "notes": "#5 local LLM, Alibaba's reasoning model, competitive with DeepSeek-R1",
+                "why_sota": "Strong reasoning with slightly better general knowledge than R1",
+                "strengths": ["Reasoning", "General knowledge", "Instruction following"],
+                "use_cases": ["Complex reasoning", "Research", "Analysis"],
+                "vram_gb": 19,
+                "quantization": "Q4_K_M",
+                "is_uncensored": False,
+                "uncensored_variant": "mradermacher/QwQ-32B-Uncensored-GGUF"
             }
         },
         {
@@ -437,82 +525,102 @@ def seed_sota_models(db: sqlite3.Connection):
             "release_date": "2025-12-01",
             "is_sota": True,
             "is_open_source": True,
-            "sota_rank": 2,
-            "sota_rank_open": 2,
+            "sota_rank": 6,
+            "sota_rank_open": 6,
             "metrics": {
-                "notes": "#2 local LLM, GPT-4 class performance, 40GB GGUF, runs on 64GB MacBook or dual RTX 4090",
-                "why_sota": "Best balance of capability and deployment flexibility, Meta's most capable open model",
-                "strengths": ["GPT-4 class", "Instruction following", "Safety", "Wide deployment support"],
-                "use_cases": ["Enterprise deployments", "Safe assistant", "General purpose", "MacBook Pro M3 Max"],
-                "vram": "40GB"
+                "notes": "#6 local LLM, GPT-4 class, needs 40GB+ VRAM or dual GPU setup",
+                "why_sota": "Meta's most capable open model, enterprise-grade safety",
+                "strengths": ["GPT-4 class", "Safety", "Instruction following"],
+                "use_cases": ["Enterprise", "Safety-critical apps", "64GB MacBook Pro"],
+                "vram_gb": 40,
+                "quantization": "Q4_K_M",
+                "is_uncensored": False
             }
         },
         {
             "id": "deepseek-v3",
-            "name": "DeepSeek V3 (DeepSeek)",
+            "name": "DeepSeek V3 (MoE)",
             "category": "llm_local",
             "release_date": "2025-12-25",
             "is_sota": True,
             "is_open_source": True,
-            "sota_rank": 3,
-            "sota_rank_open": 3,
+            "sota_rank": 7,
+            "sota_rank_open": 7,
             "metrics": {
-                "notes": "#3 local LLM, 671B MoE (37B active), 78% MMLU-Pro, cheapest API at $0.07/M tokens",
-                "why_sota": "Most efficient MoE architecture, GPT-4 quality at 1/10th the cost",
-                "strengths": ["Cost efficiency", "MoE architecture", "Code generation", "Math/reasoning"],
-                "use_cases": ["Cost-sensitive deployments", "Code generation", "Math problems", "API fallback"],
-                "vram": "37GB active"
+                "notes": "#7 local LLM, 671B MoE (37B active), needs multi-GPU or API access",
+                "why_sota": "Most capable open model overall, but requires significant hardware",
+                "strengths": ["Raw capability", "Code", "Math", "Multi-GPU clusters"],
+                "use_cases": ["API fallback", "Multi-GPU setups", "Maximum quality needs"],
+                "vram_gb": 37,
+                "quantization": "Q4_K_M",
+                "is_uncensored": False,
+                "note": "Requires multi-GPU for local deployment"
+            }
+        },
+
+        # --- UNCENSORED VARIANTS (is_uncensored: true) ---
+        # These are abliterated/JOSIEFIED versions of official models
+        {
+            "id": "josiefied-qwen3-8b",
+            "name": "JOSIEFIED-Qwen3-8B",
+            "category": "llm_local",
+            "release_date": "2026-01-05",
+            "is_sota": True,
+            "is_open_source": True,
+            "sota_rank": 8,
+            "sota_rank_open": 8,
+            "metrics": {
+                "notes": "Uncensored Qwen3-8B, JOSIEFIED abliteration + fine-tuning for better quality",
+                "why_sota": "Best uncensored small model, JOSIEFIED preserves quality better than pure abliteration",
+                "strengths": ["Uncensored", "Small footprint", "Quality preserved", "Creative freedom"],
+                "use_cases": ["Creative writing", "Roleplay", "Unrestricted chat", "Running alongside GPU tasks"],
+                "vram_gb": 6,
+                "quantization": "Q5_K_M",
+                "is_uncensored": True,
+                "hf_repo": "mradermacher/Josiefied-Qwen3-8B-abliterated-v1-GGUF",
+                "base_model": "qwen3-8b"
             }
         },
         {
-            "id": "qwen2.5-72b",
-            "name": "Qwen 2.5-72B (Alibaba)",
+            "id": "qwen3-32b-uncensored",
+            "name": "Qwen3-32B-Uncensored",
             "category": "llm_local",
-            "release_date": "2025-09-01",
+            "release_date": "2026-01-05",
             "is_sota": True,
             "is_open_source": True,
-            "sota_rank": 4,
-            "sota_rank_open": 4,
+            "sota_rank": 9,
+            "sota_rank_open": 9,
             "metrics": {
-                "notes": "#4 local LLM, excellent math/reasoning, 41GB GGUF Q4, strong Chinese support",
-                "why_sota": "Best for mathematical reasoning and Chinese language tasks",
-                "strengths": ["Math reasoning", "Chinese language", "Long context", "Instruction following"],
-                "use_cases": ["Math tutoring", "Chinese content", "Academic research", "Data analysis"],
-                "vram": "41GB"
+                "notes": "Uncensored Qwen3-32B, abliterated variant without safety guardrails",
+                "why_sota": "Full Qwen3-32B quality without restrictions",
+                "strengths": ["Uncensored", "Full 32B quality", "Creative freedom", "Single GPU"],
+                "use_cases": ["Creative writing", "Unrestricted research", "Roleplay"],
+                "vram_gb": 19,
+                "quantization": "Q4_K_M",
+                "is_uncensored": True,
+                "hf_repo": "mradermacher/Qwen3-32B-Uncensored-GGUF",
+                "base_model": "qwen3-32b"
             }
         },
         {
-            "id": "qwen2.5-32b",
-            "name": "Qwen 2.5-32B (Alibaba)",
+            "id": "qwq-32b-uncensored",
+            "name": "QwQ-32B-Uncensored",
             "category": "llm_local",
-            "release_date": "2025-09-01",
+            "release_date": "2025-12-01",
             "is_sota": True,
             "is_open_source": True,
-            "sota_rank": 5,
-            "sota_rank_open": 5,
+            "sota_rank": 10,
+            "sota_rank_open": 10,
             "metrics": {
-                "notes": "#5 local LLM, best quality/speed balance, 19GB GGUF Q4, fits RTX 4090/3090",
-                "why_sota": "Sweet spot for single high-end consumer GPU with excellent quality",
-                "strengths": ["Single GPU", "Good quality", "Fast inference", "RTX 4090 optimal"],
-                "use_cases": ["Personal assistant", "RTX 4090 builds", "Interactive use", "Balanced workloads"],
-                "vram": "19GB"
-            }
-        },
-        {
-            "id": "qwen2.5-7b",
-            "name": "Qwen 2.5-7B (Alibaba)",
-            "category": "llm_local",
-            "release_date": "2025-09-01",
-            "is_sota": True,
-            "is_open_source": True,
-            "sota_rank": 6,
-            "sota_rank_open": 6,
-            "metrics": {
-                "notes": "#6 local LLM, best small model, 4.4GB GGUF Q4, runs on laptops and mobile",
-                "why_sota": "Best quality in the 7B class, optimal for resource-constrained deployments",
-                "strengths": ["Small footprint", "Fast", "Low VRAM", "Edge deployment"],
-                "use_cases": ["Laptops", "Edge devices", "Quick tasks", "Prototyping", "RTX 3060/4060"],
-                "vram": "4.4GB"
+                "notes": "Uncensored QwQ-32B reasoning model, abliterated variant",
+                "why_sota": "Best uncensored reasoning model, full QwQ quality without restrictions",
+                "strengths": ["Uncensored", "Reasoning", "No refusals on complex topics"],
+                "use_cases": ["Unrestricted reasoning", "Research", "Complex analysis without guardrails"],
+                "vram_gb": 19,
+                "quantization": "Q4_K_M",
+                "is_uncensored": True,
+                "hf_repo": "mradermacher/QwQ-32B-Uncensored-GGUF",
+                "base_model": "qwq-32b"
             }
         },
 

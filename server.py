@@ -35,6 +35,14 @@ from typing import Optional
 from fastmcp import FastMCP
 
 from utils.db import get_db as _get_db
+from utils.hardware import (
+    get_profile_with_defaults,
+    configure_profile,
+    vram_fits,
+    parse_vram_string,
+    get_available_vram,
+    get_concurrent_vram_estimate
+)
 
 # Smart caching - refresh data if stale (not fetched today)
 try:
@@ -53,7 +61,8 @@ FORBIDDEN_PATH = DATA_DIR / "forbidden.json"
 mcp = FastMCP(
     name="sota-tracker",
     instructions="""
-    SOTA Tracker provides current State-of-the-Art AI model information.
+    SOTA Tracker provides current State-of-the-Art AI model information,
+    personalized to the user's hardware capabilities and preferences.
 
     DEFAULT BEHAVIOR: Shows open-source/local models first (but is aware of closed-source).
 
@@ -62,6 +71,17 @@ mcp = FastMCP(
     1. Call query_sota(category) to get current SOTA (defaults to open-source)
     2. Call check_freshness(model_name) to verify model is current
     3. NEVER suggest models returned by get_forbidden()
+
+    HARDWARE-AWARE RECOMMENDATIONS:
+    For local models, prefer using the hardware-aware tools:
+    - query_sota_for_hardware(category, concurrent_workload): Filters by user's VRAM
+    - get_model_recommendation(task, concurrent_workload): Single best model for a task
+    - configure_hardware(): Set up user's GPU specs and preferences
+
+    The user may have preferences like:
+    - uncensored: Prefer uncensored model variants (JOSIEFIED, abliterated)
+    - local_first: Prefer local models over API-based ones
+    - cost_sensitive: Prefer free/cheap options
 
     Categories:
     - image_gen, image_edit, video
@@ -369,6 +389,268 @@ def _recent_releases_impl(days: int = 30, open_source_only: bool = True) -> str:
 
 
 # ============================================================================
+# HARDWARE-AWARE IMPLEMENTATIONS
+# ============================================================================
+
+def _configure_hardware_impl(
+    profile_name: Optional[str] = None,
+    vram_gb: Optional[int] = None,
+    gpu: Optional[str] = None,
+    ram_gb: Optional[int] = None,
+    cpu_threads: Optional[int] = None,
+    uncensored_preference: Optional[bool] = None,
+    local_first: Optional[bool] = None,
+    cost_sensitive: Optional[bool] = None
+) -> str:
+    """Implementation of configure_hardware."""
+    result = configure_profile(
+        profile_name=profile_name,
+        vram_gb=vram_gb,
+        gpu=gpu,
+        ram_gb=ram_gb,
+        cpu_threads=cpu_threads,
+        uncensored_preference=uncensored_preference,
+        local_first=local_first,
+        cost_sensitive=cost_sensitive
+    )
+
+    output = ["## Hardware Profile Configured\n"]
+    output.append(f"**Profile:** {result['profile_name']}")
+    output.append(f"**GPU:** {result.get('gpu', 'Unknown')}")
+    output.append(f"**VRAM:** {result.get('vram_gb', 'Unknown')} GB")
+    output.append(f"**RAM:** {result.get('ram_gb', 'Unknown')} GB")
+    output.append(f"**CPU Threads:** {result.get('cpu_threads', 'Unknown')}")
+    output.append("\n**Preferences:**")
+    prefs = result.get('preferences', {})
+    output.append(f"- Uncensored models: {'Yes' if prefs.get('uncensored') else 'No'}")
+    output.append(f"- Local-first: {'Yes' if prefs.get('local_first') else 'No'}")
+    output.append(f"- Cost-sensitive: {'Yes' if prefs.get('cost_sensitive') else 'No'}")
+
+    return "\n".join(output)
+
+
+def _query_sota_for_hardware_impl(
+    category: str,
+    concurrent_vram_gb: int = 0,
+    concurrent_workload: Optional[str] = None
+) -> str:
+    """Implementation of query_sota_for_hardware."""
+    valid_categories = [
+        "image_gen", "image_edit", "video", "llm_local", "llm_api", "llm_coding",
+        "tts", "stt", "music", "3d", "embeddings"
+    ]
+
+    if category not in valid_categories:
+        return f"Invalid category '{category}'. Valid: {', '.join(valid_categories)}"
+
+    # Get hardware profile
+    profile = get_profile_with_defaults()
+    total_vram = profile.get("vram_gb", 8)
+    prefs = profile.get("preferences", {})
+
+    # Calculate available VRAM
+    if concurrent_workload:
+        concurrent_vram_gb = get_concurrent_vram_estimate(concurrent_workload)
+    available_vram = max(0, total_vram - concurrent_vram_gb)
+
+    db = get_db()
+    current_date = datetime.now().strftime("%B %Y")
+
+    # Query SOTA models (open-source for local categories, all for API)
+    if category in ["llm_api"]:
+        rows = db.execute("""
+            SELECT name, release_date, sota_rank as rank, metrics, source_url, is_open_source
+            FROM models
+            WHERE category = ? AND is_sota = 1
+            ORDER BY sota_rank ASC
+        """, (category,)).fetchall()
+    else:
+        rows = db.execute("""
+            SELECT name, release_date, sota_rank_open as rank, metrics, source_url, is_open_source
+            FROM models
+            WHERE category = ? AND is_sota = 1 AND is_open_source = 1
+            ORDER BY sota_rank_open ASC
+        """, (category,)).fetchall()
+
+    if not rows:
+        return f"No SOTA models found for '{category}'"
+
+    result = [f"## SOTA Models for {category.upper()} ({current_date})"]
+    result.append(f"**Your Hardware:** {profile.get('gpu', 'Unknown')} ({total_vram}GB VRAM)")
+    if concurrent_vram_gb > 0:
+        workload_note = f" ({concurrent_workload})" if concurrent_workload else ""
+        result.append(f"**Concurrent Usage:** {concurrent_vram_gb}GB{workload_note}")
+    result.append(f"**Available VRAM:** {available_vram}GB")
+
+    prefer_uncensored = prefs.get("uncensored", False)
+    if prefer_uncensored:
+        result.append("**Preference:** Uncensored models prioritized\n")
+    else:
+        result.append("")
+
+    fits_models = []
+    no_fit_models = []
+
+    for row in rows:
+        try:
+            metrics = json.loads(row["metrics"]) if row["metrics"] else {}
+        except json.JSONDecodeError:
+            metrics = {}
+
+        model_vram = metrics.get("vram_gb") or metrics.get("vram")
+        model_fits = vram_fits(model_vram, available_vram)
+
+        is_uncensored = metrics.get("is_uncensored", False)
+        uncensored_variant = metrics.get("uncensored_variant")
+
+        model_info = {
+            "name": row["name"],
+            "rank": row["rank"],
+            "release_date": row["release_date"],
+            "vram_gb": parse_vram_string(str(model_vram)) if model_vram else None,
+            "fits": model_fits,
+            "metrics": metrics,
+            "is_uncensored": is_uncensored,
+            "uncensored_variant": uncensored_variant
+        }
+
+        if model_fits:
+            fits_models.append(model_info)
+        else:
+            no_fit_models.append(model_info)
+
+    # If user prefers uncensored, sort to show uncensored models first
+    if prefer_uncensored:
+        fits_models.sort(key=lambda m: (not m["is_uncensored"], m["rank"]))
+
+    if fits_models:
+        result.append("### Models That Fit Your VRAM\n")
+        for m in fits_models:
+            vram_str = f" ({m['vram_gb']}GB)" if m['vram_gb'] else ""
+            uncensored_badge = " [UNCENSORED]" if m["is_uncensored"] else ""
+            result.append(f"**#{m['rank']} {m['name']}**{vram_str}{uncensored_badge}")
+
+            # Show uncensored variant for censored models if user prefers uncensored
+            if prefer_uncensored and not m["is_uncensored"] and m.get("uncensored_variant"):
+                result.append(f"   → Uncensored alternative: {m['uncensored_variant']}")
+
+            notes = m["metrics"].get("notes", "")
+            if notes:
+                result.append(f"   {notes}")
+
+    if no_fit_models and category == "llm_local":
+        result.append("\n### Models Too Large (need more free VRAM)\n")
+        for m in no_fit_models[:3]:  # Show top 3 that don't fit
+            vram_str = f" ({m['vram_gb']}GB)" if m['vram_gb'] else ""
+            uncensored_badge = " [UNCENSORED]" if m.get("is_uncensored") else ""
+            result.append(f"~~#{m['rank']} {m['name']}~~{vram_str}{uncensored_badge} - needs {m['vram_gb'] - available_vram}GB more")
+
+    return "\n".join(result)
+
+
+def _get_model_recommendation_impl(
+    task: str,
+    concurrent_workload: Optional[str] = None
+) -> str:
+    """Implementation of get_model_recommendation."""
+    # Map tasks to categories and priorities
+    task_mapping = {
+        "chat": {"category": "llm_local", "priority": ["fast", "quality"]},
+        "daily_chat": {"category": "llm_local", "priority": ["fast", "quality"]},
+        "code": {"category": "llm_coding", "priority": ["quality"]},
+        "coding": {"category": "llm_coding", "priority": ["quality"]},
+        "reason": {"category": "llm_local", "priority": ["reasoning"]},
+        "reasoning": {"category": "llm_local", "priority": ["reasoning"]},
+        "creative": {"category": "llm_local", "priority": ["creative", "quality"]},
+        "creative_writing": {"category": "llm_local", "priority": ["creative", "quality"]},
+        "max_quality": {"category": "llm_local", "priority": ["quality"]},
+        "image": {"category": "image_gen", "priority": ["quality"]},
+        "image_gen": {"category": "image_gen", "priority": ["quality"]},
+        "video": {"category": "video", "priority": ["quality"]},
+    }
+
+    task_lower = task.lower().replace(" ", "_")
+    task_info = task_mapping.get(task_lower)
+
+    if not task_info:
+        valid_tasks = ", ".join(task_mapping.keys())
+        return f"Unknown task '{task}'. Valid tasks: {valid_tasks}"
+
+    category = task_info["category"]
+
+    # Get hardware profile
+    profile = get_profile_with_defaults()
+    total_vram = profile.get("vram_gb", 8)
+    prefs = profile.get("preferences", {})
+
+    # Calculate available VRAM
+    concurrent_vram = get_concurrent_vram_estimate(concurrent_workload) if concurrent_workload else 0
+    available_vram = max(0, total_vram - concurrent_vram)
+
+    db = get_db()
+
+    # Query models
+    rows = db.execute("""
+        SELECT name, metrics, source_url
+        FROM models
+        WHERE category = ? AND is_sota = 1 AND is_open_source = 1
+        ORDER BY sota_rank_open ASC
+    """, (category,)).fetchall()
+
+    if not rows:
+        return f"No models found for task '{task}'"
+
+    # Find best fitting model
+    best_model = None
+    for row in rows:
+        try:
+            metrics = json.loads(row["metrics"]) if row["metrics"] else {}
+        except json.JSONDecodeError:
+            metrics = {}
+
+        model_vram = metrics.get("vram_gb") or metrics.get("vram")
+        if vram_fits(model_vram, available_vram):
+            best_model = {
+                "name": row["name"],
+                "metrics": metrics,
+                "source_url": row["source_url"]
+            }
+            break
+
+    if not best_model:
+        return f"No models fit your available VRAM ({available_vram}GB) for task '{task}'. Try closing other GPU workloads."
+
+    result = [f"## Recommended Model for {task.title()}\n"]
+    result.append(f"**{best_model['name']}**")
+
+    metrics = best_model["metrics"]
+    if metrics.get("vram_gb"):
+        result.append(f"VRAM: {metrics['vram_gb']}GB")
+    if metrics.get("notes"):
+        result.append(f"{metrics['notes']}")
+
+    # Add uncensored variant if user prefers
+    uncensored_variant = metrics.get("uncensored_variant")
+    if prefs.get("uncensored") and uncensored_variant:
+        result.append(f"\n**Uncensored Alternative:** {uncensored_variant}")
+
+    # Add download/run commands for local models
+    if category == "llm_local":
+        result.append("\n### Quick Start")
+        model_name_lower = best_model["name"].lower().replace(" ", "-")
+        if "qwen" in model_name_lower:
+            result.append(f"```bash")
+            result.append(f"# Download from HuggingFace")
+            result.append(f"huggingface-cli download <model-repo> --include '*Q4_K_M*'")
+            result.append(f"")
+            result.append(f"# Run with llama.cpp")
+            result.append(f"llama-cli -m ~/models/gguf/<model>.gguf -cnv -ngl 99")
+            result.append(f"```")
+
+    return "\n".join(result)
+
+
+# ============================================================================
 # MCP TOOLS (wrappers for MCP decorator)
 # ============================================================================
 
@@ -518,6 +800,116 @@ def cache_status() -> str:
         return "\n".join(result)
     except Exception as e:
         return f"Cache status error: {e}"
+
+
+@mcp.tool()
+def configure_hardware(
+    profile_name: str = None,
+    vram_gb: int = None,
+    gpu: str = None,
+    ram_gb: int = None,
+    cpu_threads: int = None,
+    uncensored_preference: bool = None,
+    local_first: bool = None,
+    cost_sensitive: bool = None
+) -> str:
+    """
+    Configure or update your hardware profile for personalized model recommendations.
+
+    Args:
+        profile_name: Name for this profile (default: auto-detect hostname)
+        vram_gb: GPU VRAM in gigabytes (e.g., 32 for RTX 5090)
+        gpu: GPU model name (e.g., "RTX 5090", "RTX 4090")
+        ram_gb: System RAM in gigabytes
+        cpu_threads: Number of CPU threads available
+        uncensored_preference: Prefer uncensored model variants when available
+        local_first: Prefer local models over API-based ones
+        cost_sensitive: Prefer free/cheap options over paid APIs
+
+    Returns:
+        Current profile configuration after updates.
+    """
+    return _configure_hardware_impl(
+        profile_name=profile_name,
+        vram_gb=vram_gb,
+        gpu=gpu,
+        ram_gb=ram_gb,
+        cpu_threads=cpu_threads,
+        uncensored_preference=uncensored_preference,
+        local_first=local_first,
+        cost_sensitive=cost_sensitive
+    )
+
+
+@mcp.tool()
+def query_sota_for_hardware(
+    category: str,
+    concurrent_vram_gb: int = 0,
+    concurrent_workload: str = None
+) -> str:
+    """
+    Get SOTA models filtered by your hardware capabilities.
+
+    Automatically considers your GPU VRAM and shows which models fit.
+    Respects your preferences (uncensored, local-first, etc.).
+
+    Args:
+        category: Model category (llm_local, image_gen, video, etc.)
+        concurrent_vram_gb: VRAM already in use by other workloads (in GB)
+        concurrent_workload: Named workload (image_gen, video_gen, comfyui, gaming, etc.)
+                            If provided, overrides concurrent_vram_gb with estimate.
+
+    Returns:
+        Models ranked by quality, showing which fit your available VRAM.
+        Includes uncensored variants if you have that preference enabled.
+
+    Example:
+        # When running FLUX.2-dev for image gen (~24GB VRAM):
+        query_sota_for_hardware("llm_local", concurrent_workload="image_gen")
+        # Returns smaller models like Qwen3-8B that fit in remaining 8GB
+    """
+    return _query_sota_for_hardware_impl(
+        category=category,
+        concurrent_vram_gb=concurrent_vram_gb,
+        concurrent_workload=concurrent_workload
+    )
+
+
+@mcp.tool()
+def get_model_recommendation(
+    task: str,
+    concurrent_workload: str = None
+) -> str:
+    """
+    Get a single best model recommendation for a specific task.
+
+    Analyzes your hardware profile and current GPU usage to recommend
+    the best model that will actually fit and run well.
+
+    Args:
+        task: What you want to do. Options:
+              - chat, daily_chat: General conversation
+              - code, coding: Code generation and assistance
+              - reason, reasoning: Complex reasoning tasks
+              - creative, creative_writing: Story writing, creative content
+              - max_quality: Best possible quality (when GPU is free)
+              - image, image_gen: Image generation
+              - video: Video generation
+        concurrent_workload: What else is running on GPU (image_gen, video_gen,
+                            comfyui, gaming, none). Affects available VRAM.
+
+    Returns:
+        Single best model with VRAM requirements and quick-start commands.
+        Includes uncensored alternative if you prefer those.
+
+    Example:
+        # Best chat model while running image generation:
+        get_model_recommendation("chat", concurrent_workload="image_gen")
+    """
+    return _get_model_recommendation_impl(
+        task=task,
+        concurrent_workload=concurrent_workload
+    )
 
 
 # ============================================================================
