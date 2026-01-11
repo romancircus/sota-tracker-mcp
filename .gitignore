@@ -33,9 +33,14 @@ Thumbs.db
 test_*.json
 debug_*.json
 
+# User-specific configuration (DO NOT COMMIT)
+# Each user has their own hardware/preferences
+data/hardware_profiles.json
+
 # NOTE: We DO commit these files (they're the point of the project):
 # - data/sota.db
 # - data/sota_export.json
 # - data/sota_export.csv
 # - data/forbidden.json
 # - data/lmarena_latest.json
+# - data/hardware_profiles.example.json (template for users)

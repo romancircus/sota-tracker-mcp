@@ -1,11 +1,10 @@
 """Hardware profile utilities for personalized model recommendations."""
 
 import json
-import os
 import re
 import socket
 from pathlib import Path
-from typing import Optional
+from typing import Any, Optional
 
 # Path to hardware profiles config
 DATA_DIR = Path(__file__).parent.parent / "data"
@@ -133,7 +132,7 @@ def parse_vram_string(vram_str: str) -> Optional[int]:
         return None
 
 
-def vram_fits(model_vram: any, available_vram_gb: int) -> bool:
+def vram_fits(model_vram: Any, available_vram_gb: int) -> bool:
     """Check if a model fits in available VRAM."""
     if model_vram is None:
         # If no VRAM info, assume it fits (be permissive)
