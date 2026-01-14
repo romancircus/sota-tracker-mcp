@@ -233,6 +233,57 @@ def run_all_scrapers(export: bool = False):
     except Exception as e:
         print(f"   ERROR: {e}\n")
 
+    # 3. HuggingFace (Open LLM Leaderboard + Trending)
+    print("3. Fetching HuggingFace data...")
+    try:
+        from fetchers.huggingface import HuggingFaceFetcher
+        hf = HuggingFaceFetcher()
+
+        # Open LLM Leaderboard
+        result_llm = hf.fetch_llm_leaderboard()
+        if result_llm:
+            result = {
+                "models": result_llm,
+                "model_count": len(result_llm),
+                "scraped_at": datetime.now().isoformat()
+            }
+            update_models_from_scrape(result, "huggingface")
+            update_cache_status("llm_local", "huggingface", True)
+            results["hf_llm"] = result
+            print(f"   SUCCESS: {len(result_llm)} local LLMs fetched")
+
+        # Trending embeddings
+        result_embed = hf.fetch_trending_models(task="feature-extraction", limit=10)
+        if result_embed:
+            for m in result_embed:
+                m["category"] = "embeddings"
+            result = {"models": result_embed, "model_count": len(result_embed), "scraped_at": datetime.now().isoformat()}
+            update_models_from_scrape(result, "huggingface")
+            results["hf_embed"] = result
+            print(f"   SUCCESS: {len(result_embed)} embeddings fetched\n")
+
+    except Exception as e:
+        print(f"   ERROR: {e}\n")
+        update_cache_status("llm_local", "huggingface", False, str(e))
+
+    # 4. Civitai (Image Generation)
+    print("4. Fetching Civitai image models...")
+    try:
+        from scrapers.civitai import CivitaiScraper
+        civitai = CivitaiScraper()
+        result = civitai.scrape(model_type="Checkpoint", limit=20)
+        results["civitai"] = result
+
+        if result.get("models"):
+            count = update_models_from_scrape(result, "civitai")
+            update_cache_status("image_gen", "civitai", True)
+            print(f"   SUCCESS: {result['model_count']} image models fetched\n")
+        else:
+            print(f"   FAILED: {result.get('error', 'No models')}\n")
+    except Exception as e:
+        print(f"   ERROR: {e}\n")
+        update_cache_status("image_gen", "civitai", False, str(e))
+
     # Summary
     print("=== Summary ===")
     for source, result in results.items():

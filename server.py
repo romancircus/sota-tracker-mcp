@@ -953,7 +953,21 @@ def get_forbidden_resource() -> str:
 
 def main():
     """Run the MCP server."""
-    mcp.run()
+    import sys
+
+    if "--http" in sys.argv:
+        # Run FastMCP with HTTP transport
+        host = "0.0.0.0"
+        port = 8000
+        for i, arg in enumerate(sys.argv):
+            if arg == "--host" and i + 1 < len(sys.argv):
+                host = sys.argv[i + 1]
+            if arg == "--port" and i + 1 < len(sys.argv):
+                port = int(sys.argv[i + 1])
+        print(f"Starting HTTP server on {host}:{port}")
+        mcp.run(transport="http", host=host, port=port)
+    else:
+        mcp.run()  # Default: stdio
 
 
 if __name__ == "__main__":

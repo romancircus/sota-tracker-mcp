@@ -86,8 +86,19 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
 
+      - name: Check if Sunday for weekly release
+        if: github.event_name == 'schedule'
+        id: check_sunday
+        run: |
+          DAY_OF_WEEK=$(date +%u)
+          if [ "$DAY_OF_WEEK" = "7" ]; then
+            echo "is_sunday=true" >> $GITHUB_OUTPUT
+          else
+            echo "is_sunday=false" >> $GITHUB_OUTPUT
+          fi
+
       - name: Create release (weekly on Sundays)
-        if: github.event.schedule == '0 6 * * 0'  # Only on Sundays
+        if: steps.check_sunday.outputs.is_sunday == 'true'
         uses: softprops/action-gh-release@v1
         with:
           tag_name: data-${{ github.run_number }}
@@ -98,6 +109,8 @@ jobs:
             Updated data from:
             - LMArena (Chatbot Arena Elo rankings)
             - Artificial Analysis (LLM benchmarks)
+            - HuggingFace (Open LLM Leaderboard)
+            - Civitai (Image generation models)
 
             Files:
             - `sota_export.json` - Full data export
