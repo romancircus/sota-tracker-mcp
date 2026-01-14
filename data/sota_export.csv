@@ -23,7 +23,7 @@ claude-opus-4.5,Claude Opus 4.5,llm_api,0,1,2025-11-01,manual,2026-01-11 15:34:3
 gemini-3-pro,gemini-3-pro,llm_api,0,1,,lmarena,2026-01-14T05:06:11.384804
 claude-opus-4-5-20251101-thinking-32k,claude-opus-4-5-20251101-thinking-32k,llm_api,0,1,,lmarena,2026-01-14T05:06:11.384604
 chatgpt-image-latest-(20251216),chatgpt-image-latest (20251216),llm_api,0,1,,lmarena,2026-01-14T05:06:11.385059
-gpt-5-2-(xhigh),GPT-5.2 (xhigh),llm_api,0,1,,artificial_analysis,2026-01-14T05:06:16.434532
+gpt-5-2-(xhigh),GPT-5.2 (xhigh),llm_api,0,1,,artificial_analysis,2026-01-14T07:01:44.274461
 gpt-4.5,GPT-4.5,llm_api,0,2,2025-10-01,manual,2026-01-11 15:34:39
 grok-4-1-thinking,grok-4.1-thinking,llm_api,0,2,,lmarena,2026-01-14T05:06:11.384353
 gemini-3-flash,gemini-3-flash,llm_api,0,2,,lmarena,2026-01-14T05:06:11.384823
@@ -33,11 +33,11 @@ gemini-2.0-pro,Gemini 2.0 Pro,llm_api,0,3,2025-12-01,manual,2026-01-11 15:34:39
 gemini-3-flash-(thinking-minimal),gemini-3-flash (thinking-minimal),llm_api,0,3,,lmarena,2026-01-14T05:06:11.384840
 gpt-5-2-high,gpt-5.2-high,llm_api,0,3,,lmarena,2026-01-14T05:06:11.384674
 gemini-3-pro-image-preview-(nano-banana-pro),gemini-3-pro-image-preview (nano-banana-pro),llm_api,0,3,,lmarena,2026-01-14T05:06:11.385097
-gemini-3-pro-preview-(high),Gemini 3 Pro Preview (high),llm_api,0,3,,artificial_analysis,2026-01-14T05:06:16.434762
+gemini-3-pro-preview-(high),Gemini 3 Pro Preview (high),llm_api,0,3,,artificial_analysis,2026-01-14T07:01:44.274640
 grok-4.1,Grok 4.1 (xAI),llm_api,0,4,2025-11-01,manual,2026-01-11 15:34:39
 gemini-2-5-pro,gemini-2.5-pro,llm_api,0,4,,lmarena,2026-01-14T05:06:11.384858
 gpt-image-1-5,gpt-image-1.5,llm_api,0,4,,lmarena,2026-01-14T05:06:11.385350
-gpt-5-1-(high),GPT-5.1 (high),llm_api,0,4,,artificial_analysis,2026-01-14T05:06:16.434803
+gpt-5-1-(high),GPT-5.1 (high),llm_api,0,4,,artificial_analysis,2026-01-14T07:01:44.274675
 deepseek-v3-api,DeepSeek V3 API (DeepSeek),llm_api,1,5,2025-12-25,manual,2026-01-11 15:34:39
 gpt-5-1-high,gpt-5.1-high,llm_api,0,5,,lmarena,2026-01-14T05:06:11.384875
 seedream-4-5,seedream-4.5,llm_api,1,5,,lmarena,2026-01-14T05:06:11.385374
@@ -47,12 +47,12 @@ glm-4-7,glm-4.7,llm_api,1,6,,lmarena,2026-01-14T05:06:11.384733
 gpt-5-1,gpt-5.1,llm_api,0,6,,lmarena,2026-01-14T05:06:11.384886
 gemini-2-5-flash-image-preview-(nano-banana),gemini-2.5-flash-image-preview (nano-banana),llm_api,0,6,,lmarena,2026-01-14T05:06:11.385401
 flux-2-flex,flux-2-flex,llm_api,1,6,,lmarena,2026-01-14T05:06:11.385003
-gpt-5-2-(medium),GPT-5.2 (medium),llm_api,0,6,,artificial_analysis,2026-01-14T05:06:16.434836
+gpt-5-2-(medium),GPT-5.2 (medium),llm_api,0,6,,artificial_analysis,2026-01-14T07:01:44.274704
 llama-3.3-together,Llama 3.3-70B via Together.ai,llm_api,1,7,2025-12-01,manual,2026-01-11 15:34:39
 minimax-m2-1-preview,minimax-m2.1-preview,llm_api,1,7,,lmarena,2026-01-14T05:06:11.384748
 chatgpt-4o-latest-20250326,chatgpt-4o-latest-20250326,llm_api,0,7,,lmarena,2026-01-14T05:06:11.384898
 seedream-4-2k,seedream-4-2k,llm_api,1,7,,lmarena,2026-01-14T05:06:11.385422
-claude-opus-4-5,Claude Opus 4.5,llm_api,0,7,,artificial_analysis,2026-01-14T05:06:16.434894
+claude-opus-4-5,Claude Opus 4.5,llm_api,0,7,,artificial_analysis,2026-01-14T07:01:44.274723
 gpt-5-2,gpt-5.2,llm_api,0,8,,lmarena,2026-01-14T05:06:11.384760
 gemini-2-5-flash-preview-09-2025,gemini-2.5-flash-preview-09-2025,llm_api,0,8,,lmarena,2026-01-14T05:06:11.384910
 flux-2-max,flux-2-max,llm_api,1,8,,lmarena,2026-01-14T05:06:11.385441
@@ -65,24 +65,24 @@ imagen-4-0-ultra-generate-preview-06-06,imagen-4.0-ultra-generate-preview-06-06,
 gpt-5-1-medium,gpt-5.1-medium,llm_api,0,10,,lmarena,2026-01-14T05:06:11.384784
 gpt-5-chat,gpt-5-chat,llm_api,0,10,,lmarena,2026-01-14T05:06:11.384934
 reve-v1-1,reve-v1.1,llm_api,1,10,,lmarena,2026-01-14T05:06:11.385470
-gpt-5-1-codex-(high),GPT-5.1 Codex (high),llm_api,0,10,,artificial_analysis,2026-01-14T05:06:16.434963
-grok-4,Grok 4,llm_api,0,11,,artificial_analysis,2026-01-14T05:06:16.434981
-deepseek-v3-2,DeepSeek V3.2,llm_api,1,12,,artificial_analysis,2026-01-14T05:06:16.434998
-o3,o3,llm_api,1,13,,artificial_analysis,2026-01-14T05:06:16.435015
-gpt-5-mini-(high),GPT-5 mini (high),llm_api,0,14,,artificial_analysis,2026-01-14T05:06:16.435032
-gemini-3-pro-preview-(low),Gemini 3 Pro Preview (low),llm_api,0,15,,artificial_analysis,2026-01-14T05:06:16.435050
-kimi-k2-thinking,Kimi K2 Thinking,llm_api,1,16,,artificial_analysis,2026-01-14T05:06:16.435066
-minimax-m2-1,MiniMax-M2.1,llm_api,1,17,,artificial_analysis,2026-01-14T05:06:16.435083
-mimo-v2-flash,MiMo-V2-Flash,llm_api,1,18,,artificial_analysis,2026-01-14T05:06:16.435099
-grok-4-1-fast,Grok 4.1 Fast,llm_api,0,19,,artificial_analysis,2026-01-14T05:06:16.435116
-gpt-5-1-codex-mini-(high),GPT-5.1 Codex mini (high),llm_api,0,20,,artificial_analysis,2026-01-14T05:06:16.435134
-claude-4-5-haiku,Claude 4.5 Haiku,llm_api,0,21,,artificial_analysis,2026-01-14T05:06:16.435151
-claude-4-5-sonnet,Claude 4.5 Sonnet,llm_api,0,22,,artificial_analysis,2026-01-14T05:06:16.435184
-kat-coder-pro-v1,KAT-Coder-Pro V1,llm_api,1,23,,artificial_analysis,2026-01-14T05:06:16.435202
-minimax-m2,MiniMax-M2,llm_api,1,24,,artificial_analysis,2026-01-14T05:06:16.435223
-nova-2-0-pro-preview-(medium),Nova 2.0 Pro Preview (medium),llm_api,1,25,,artificial_analysis,2026-01-14T05:06:16.435242
-grok-4-fast,Grok 4 Fast,llm_api,0,27,,artificial_analysis,2026-01-14T05:06:16.435265
-deepseek-v3-1-terminus,DeepSeek V3.1 Terminus,llm_api,1,30,,artificial_analysis,2026-01-14T05:06:16.435318
+gpt-5-1-codex-(high),GPT-5.1 Codex (high),llm_api,0,10,,artificial_analysis,2026-01-14T07:01:44.274763
+grok-4,Grok 4,llm_api,0,11,,artificial_analysis,2026-01-14T07:01:44.274780
+deepseek-v3-2,DeepSeek V3.2,llm_api,1,12,,artificial_analysis,2026-01-14T07:01:44.274798
+o3,o3,llm_api,1,13,,artificial_analysis,2026-01-14T07:01:44.274815
+gpt-5-mini-(high),GPT-5 mini (high),llm_api,0,14,,artificial_analysis,2026-01-14T07:01:44.274832
+gemini-3-pro-preview-(low),Gemini 3 Pro Preview (low),llm_api,0,15,,artificial_analysis,2026-01-14T07:01:44.274850
+kimi-k2-thinking,Kimi K2 Thinking,llm_api,1,16,,artificial_analysis,2026-01-14T07:01:44.274867
+minimax-m2-1,MiniMax-M2.1,llm_api,1,17,,artificial_analysis,2026-01-14T07:01:44.274884
+mimo-v2-flash,MiMo-V2-Flash,llm_api,1,18,,artificial_analysis,2026-01-14T07:01:44.274902
+grok-4-1-fast,Grok 4.1 Fast,llm_api,0,19,,artificial_analysis,2026-01-14T07:01:44.274918
+gpt-5-1-codex-mini-(high),GPT-5.1 Codex mini (high),llm_api,0,20,,artificial_analysis,2026-01-14T07:01:44.274940
+claude-4-5-haiku,Claude 4.5 Haiku,llm_api,0,21,,artificial_analysis,2026-01-14T07:01:44.274961
+claude-4-5-sonnet,Claude 4.5 Sonnet,llm_api,0,22,,artificial_analysis,2026-01-14T07:01:44.274990
+kat-coder-pro-v1,KAT-Coder-Pro V1,llm_api,1,23,,artificial_analysis,2026-01-14T07:01:44.275009
+minimax-m2,MiniMax-M2,llm_api,1,24,,artificial_analysis,2026-01-14T07:01:44.275026
+nova-2-0-pro-preview-(medium),Nova 2.0 Pro Preview (medium),llm_api,1,25,,artificial_analysis,2026-01-14T07:01:44.275081
+grok-4-fast,Grok 4 Fast,llm_api,0,27,,artificial_analysis,2026-01-14T07:01:44.275127
+deepseek-v3-1-terminus,DeepSeek V3.1 Terminus,llm_api,1,30,,artificial_analysis,2026-01-14T07:01:44.275167
 qwen3-coder,Qwen 3 Coder (Alibaba),llm_coding,1,1,2026-01-01,manual,2026-01-11 15:34:39
 deepseek-v3-coder,DeepSeek V3 (DeepSeek),llm_coding,1,2,2025-12-25,manual,2026-01-11 15:34:39
 claude-opus-4.5-coding,Claude Opus 4.5,llm_coding,0,3,2025-11-01,manual,2026-01-11 15:34:39
