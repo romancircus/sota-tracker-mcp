@@ -19,6 +19,10 @@ from playwright.sync_api import sync_playwright, Page, TimeoutError as Playwrigh
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils.classification import is_open_source
 
+# Project paths (use absolute paths to prevent path traversal)
+PROJECT_DIR = Path(__file__).parent.parent
+DATA_DIR = PROJECT_DIR / "data"
+
 
 class LMArenaScraper:
     """Scrape Elo rankings from LMArena."""
@@ -202,7 +206,8 @@ if __name__ == "__main__":
             elo = m.get("elo", "N/A")
             print(f"  #{m['rank']} {m['name']}{badge}: Elo {elo}")
 
-        # Save to JSON
-        with open("data/lmarena_latest.json", "w") as f:
+        # Save to JSON (use absolute path to prevent path traversal)
+        output_path = DATA_DIR / "lmarena_latest.json"
+        with open(output_path, "w") as f:
             json.dump(result, f, indent=2)
-        print("\nSaved to data/lmarena_latest.json")
+        print(f"\nSaved to {output_path}")

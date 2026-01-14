@@ -14,6 +14,7 @@ import argparse
 import json
 import csv
 import sqlite3
+from contextlib import contextmanager
 from datetime import datetime
 from pathlib import Path
 
@@ -31,10 +32,21 @@ DB_PATH = DATA_DIR / "sota.db"
 
 
 def get_db():
-    """Get database connection."""
+    """Get database connection. Caller must close."""
     db = sqlite3.connect(str(DB_PATH))
     db.row_factory = sqlite3.Row
     return db
+
+
+@contextmanager
+def get_db_context():
+    """Get database connection as context manager (auto-closes)."""
+    db = sqlite3.connect(str(DB_PATH))
+    db.row_factory = sqlite3.Row
+    try:
+        yield db
+    finally:
+        db.close()
 
 
 def update_models_from_scrape(scraped_data: dict, source: str):
@@ -48,80 +60,89 @@ def update_models_from_scrape(scraped_data: dict, source: str):
         print(f"  No models to update from {source}")
         return 0
 
-    db = get_db()
     updated = 0
     inserted = 0
 
-    for model in models:
-        model_id = model["name"].lower().replace(" ", "-").replace("/", "-").replace(".", "-")
+    with get_db_context() as db:
+        for model in models:
+            # Validate required field
+            if "name" not in model:
+                print(f"  Warning: Skipping model without name field")
+                continue
 
-        # Check if model exists
-        existing = db.execute(
-            "SELECT id, source FROM models WHERE id = ?",
-            (model_id,)
-        ).fetchone()
+            model_id = model["name"].lower().replace(" ", "-").replace("/", "-").replace(".", "-")
 
-        if existing:
-            # Only update if source is 'auto' or same source
-            # Don't overwrite 'manual' entries
-            if existing["source"] in ["auto", source]:
-                # Get existing metrics and merge with new data
-                existing_metrics_row = db.execute(
-                    "SELECT metrics FROM models WHERE id = ?", (model_id,)
-                ).fetchone()
-                existing_metrics = {}
-                if existing_metrics_row and existing_metrics_row[0]:
-                    try:
-                        existing_metrics = json.loads(existing_metrics_row[0])
-                    except json.JSONDecodeError:
-                        pass
+            # Check if model exists
+            existing = db.execute(
+                "SELECT id, source FROM models WHERE id = ?",
+                (model_id,)
+            ).fetchone()
 
-                # Merge new scraped data into existing metrics
-                existing_metrics.update({
-                    "elo": model.get("elo"),
-                    "scraped_from": source,
-                    "scraped_at": scraped_data.get("scraped_at")
-                })
+            if existing:
+                # Only update if source is 'auto' or same source
+                # Don't overwrite 'manual' entries
+                if existing["source"] in ["auto", source]:
+                    # Get existing metrics and merge with new data
+                    existing_metrics_row = db.execute(
+                        "SELECT metrics FROM models WHERE id = ?", (model_id,)
+                    ).fetchone()
+                    existing_metrics = {}
+                    if existing_metrics_row and existing_metrics_row[0]:
+                        try:
+                            existing_metrics = json.loads(existing_metrics_row[0])
+                        except json.JSONDecodeError:
+                            pass
 
+                    # Merge new scraped data into existing metrics
+                    # Only update scraper-specific fields, preserve manual metadata
+                    # (vram_gb, notes, why_sota, strengths, use_cases, etc.)
+                    if model.get("elo") is not None:
+                        existing_metrics["elo"] = model["elo"]
+                    existing_metrics["scraped_from"] = source
+                    existing_metrics["scraped_at"] = scraped_data.get("scraped_at")
+                    # Preserve any new fields from scraper that don't exist
+                    for key in ["rating", "downloads", "base_model"]:
+                        if key in model.get("metrics", {}) and key not in existing_metrics:
+                            existing_metrics[key] = model["metrics"][key]
+
+                    db.execute("""
+                        UPDATE models
+                        SET sota_rank = ?,
+                            metrics = ?,
+                            last_updated = ?,
+                            source = ?
+                        WHERE id = ?
+                    """, (
+                        model.get("rank"),  # Use the actual scraped rank
+                        json.dumps(existing_metrics),
+                        datetime.now().isoformat(),
+                        source,
+                        model_id
+                    ))
+                    updated += 1
+            else:
+                # Insert new model
                 db.execute("""
-                    UPDATE models
-                    SET sota_rank = ?,
-                        metrics = ?,
-                        last_updated = ?,
-                        source = ?
-                    WHERE id = ?
+                    INSERT INTO models (id, name, category, is_open_source, is_sota, sota_rank, metrics, last_updated, source)
+                    VALUES (?, ?, ?, ?, 1, ?, ?, ?, ?)
                 """, (
-                    model.get("rank"),  # Use the actual scraped rank
-                    json.dumps(existing_metrics),
+                    model_id,
+                    model["name"],
+                    model.get("category", "llm_api"),
+                    model.get("is_open_source", True),
+                    model.get("rank"),
+                    json.dumps({
+                        "elo": model.get("elo"),
+                        "notes": f"Auto-scraped from {source}",
+                        "scraped_from": source,
+                        "scraped_at": scraped_data.get("scraped_at")
+                    }),
                     datetime.now().isoformat(),
-                    source,
-                    model_id
+                    source
                 ))
-                updated += 1
-        else:
-            # Insert new model
-            db.execute("""
-                INSERT INTO models (id, name, category, is_open_source, is_sota, sota_rank, metrics, last_updated, source)
-                VALUES (?, ?, ?, ?, 1, ?, ?, ?, ?)
-            """, (
-                model_id,
-                model["name"],
-                model.get("category", "llm_api"),
-                model.get("is_open_source", True),
-                model.get("rank"),
-                json.dumps({
-                    "elo": model.get("elo"),
-                    "notes": f"Auto-scraped from {source}",
-                    "scraped_from": source,
-                    "scraped_at": scraped_data.get("scraped_at")
-                }),
-                datetime.now().isoformat(),
-                source
-            ))
-            inserted += 1
+                inserted += 1
 
-    db.commit()
-    db.close()
+        db.commit()
 
     print(f"  Updated {updated}, inserted {inserted} models from {source}")
     return updated + inserted
@@ -129,31 +150,29 @@ def update_models_from_scrape(scraped_data: dict, source: str):
 
 def update_cache_status(category: str, source: str, success: bool, error: str = None):
     """Update cache status table."""
-    db = get_db()
-    db.execute("""
-        INSERT OR REPLACE INTO cache_status (category, last_fetched, fetch_source, fetch_success, error_message)
-        VALUES (?, ?, ?, ?, ?)
-    """, (
-        category,
-        datetime.now().isoformat(),
-        source,
-        success,
-        error
-    ))
-    db.commit()
-    db.close()
+    with get_db_context() as db:
+        db.execute("""
+            INSERT OR REPLACE INTO cache_status (category, last_fetched, fetch_source, fetch_success, error_message)
+            VALUES (?, ?, ?, ?, ?)
+        """, (
+            category,
+            datetime.now().isoformat(),
+            source,
+            success,
+            error
+        ))
+        db.commit()
 
 
 def export_to_json():
     """Export all SOTA data to JSON."""
-    db = get_db()
+    with get_db_context() as db:
+        # Export all models
+        rows = db.execute("""
+            SELECT * FROM models WHERE is_sota = 1 ORDER BY category, sota_rank
+        """).fetchall()
 
-    # Export all models
-    rows = db.execute("""
-        SELECT * FROM models WHERE is_sota = 1 ORDER BY category, sota_rank
-    """).fetchall()
-
-    models = [dict(row) for row in rows]
+        models = [dict(row) for row in rows]
 
     output = {
         "exported_at": datetime.now().isoformat(),
@@ -166,19 +185,16 @@ def export_to_json():
         json.dump(output, f, indent=2)
 
     print(f"Exported {len(models)} models to {output_path}")
-
-    db.close()
     return output_path
 
 
 def export_to_csv():
     """Export all SOTA data to CSV."""
-    db = get_db()
-
-    rows = db.execute("""
-        SELECT id, name, category, is_open_source, sota_rank, release_date, source, last_updated
-        FROM models WHERE is_sota = 1 ORDER BY category, sota_rank
-    """).fetchall()
+    with get_db_context() as db:
+        rows = db.execute("""
+            SELECT id, name, category, is_open_source, sota_rank, release_date, source, last_updated
+            FROM models WHERE is_sota = 1 ORDER BY category, sota_rank
+        """).fetchall()
 
     output_path = DATA_DIR / "sota_export.csv"
 
@@ -189,8 +205,6 @@ def export_to_csv():
             writer.writerow(list(row))
 
     print(f"Exported {len(rows)} models to {output_path}")
-
-    db.close()
     return output_path
 
 
