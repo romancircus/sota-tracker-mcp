@@ -1,6 +1,6 @@
 {
-  "exported_at": "2026-01-09T09:52:48.590887",
-  "model_count": 138,
+  "exported_at": "2026-01-14T05:06:16.439331",
+  "model_count": 122,
   "models": [
     {
       "id": "meshy-4",
@@ -14,7 +14,13 @@
       "sota_rank": 1,
       "sota_rank_open": null,
       "metrics": "{\"notes\": \"#1 3D generation, text/image to 3D mesh, PBR textures, rigging support\", \"why_sota\": \"Best overall quality and fastest generation, production-ready output\", \"strengths\": [\"Quality\", \"Speed\", \"PBR textures\", \"Rigging\"], \"use_cases\": [\"Game assets\", \"Product visualization\", \"3D printing\", \"AR/VR\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "tripo-2",
@@ -28,7 +34,13 @@
       "sota_rank": 2,
       "sota_rank_open": null,
       "metrics": "{\"notes\": \"#2 3D generation, excellent topology, animation-ready meshes\", \"why_sota\": \"Best mesh topology for animation, clean geometry\", \"strengths\": [\"Clean topology\", \"Animation-ready\", \"Consistent style\"], \"use_cases\": [\"Character modeling\", \"Animation assets\", \"Game characters\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "instantmesh",
@@ -42,7 +54,13 @@
       "sota_rank": 3,
       "sota_rank_open": 1,
       "metrics": "{\"notes\": \"#1 open-source 3D, single image to mesh, runs locally on RTX 3090+\", \"why_sota\": \"Best open-source quality, fast inference, local deployment\", \"strengths\": [\"Open-source\", \"Fast\", \"Local deployment\", \"Good quality\"], \"use_cases\": [\"Prototyping\", \"Research\", \"Local generation\", \"Batch processing\"], \"vram\": \"24GB\"}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/TencentARC/InstantMesh",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "triposr",
@@ -56,7 +74,13 @@
       "sota_rank": 4,
       "sota_rank_open": 2,
       "metrics": "{\"notes\": \"#2 open-source 3D, fast single-image to 3D, collaboration with Tripo AI\", \"why_sota\": \"Fastest open-source image-to-3D, good for quick prototyping\", \"strengths\": [\"Speed\", \"Single image input\", \"Open-source\", \"Easy to run\"], \"use_cases\": [\"Quick prototyping\", \"Concept art to 3D\", \"Game dev\", \"Research\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/stabilityai/TripoSR",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "openlrm",
@@ -70,147 +94,13 @@
       "sota_rank": 5,
       "sota_rank_open": 3,
       "metrics": "{\"notes\": \"#3 open-source 3D, large reconstruction model, good generalization\", \"why_sota\": \"Best generalization across object types, research-friendly\", \"strengths\": [\"Generalization\", \"Research-friendly\", \"Well-documented\", \"Active community\"], \"use_cases\": [\"Research\", \"Novel objects\", \"Benchmarking\", \"Education\"]}",
-      "last_updated": "2026-01-09 14:03:48"
-    },
-    {
-      "id": "laion-clap-htsat-fused",
-      "name": "laion/clap-htsat-fused",
-      "category": "embeddings",
-      "release_date": null,
-      "source": "auto",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 1,
-      "sota_rank": null,
-      "sota_rank_open": null,
-      "metrics": "{}",
-      "last_updated": "2026-01-09T09:10:34.718141"
-    },
-    {
-      "id": "jinaai-jina-embeddings-v3",
-      "name": "jinaai/jina-embeddings-v3",
-      "category": "embeddings",
-      "release_date": null,
-      "source": "auto",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 1,
-      "sota_rank": null,
-      "sota_rank_open": null,
-      "metrics": "{}",
-      "last_updated": "2026-01-09T09:10:34.718300"
-    },
-    {
-      "id": "baai-bge-large-en-v1.5",
-      "name": "BAAI/bge-large-en-v1.5",
-      "category": "embeddings",
-      "release_date": null,
-      "source": "auto",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 1,
-      "sota_rank": null,
-      "sota_rank_open": null,
-      "metrics": "{}",
-      "last_updated": "2026-01-09T09:10:34.718308"
-    },
-    {
-      "id": "baai-bge-small-en-v1.5",
-      "name": "BAAI/bge-small-en-v1.5",
-      "category": "embeddings",
-      "release_date": null,
-      "source": "auto",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 1,
-      "sota_rank": null,
-      "sota_rank_open": null,
-      "metrics": "{}",
-      "last_updated": "2026-01-09T09:10:34.718313"
-    },
-    {
-      "id": "intfloat-multilingual-e5-large",
-      "name": "intfloat/multilingual-e5-large",
-      "category": "embeddings",
-      "release_date": null,
-      "source": "auto",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 1,
-      "sota_rank": null,
-      "sota_rank_open": null,
-      "metrics": "{}",
-      "last_updated": "2026-01-09T09:10:34.718318"
-    },
-    {
-      "id": "baai-bge-base-en-v1.5",
-      "name": "BAAI/bge-base-en-v1.5",
-      "category": "embeddings",
-      "release_date": null,
-      "source": "auto",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 1,
-      "sota_rank": null,
-      "sota_rank_open": null,
-      "metrics": "{}",
-      "last_updated": "2026-01-09T09:10:34.718337"
-    },
-    {
-      "id": "qwen-qwen3-embedding-0.6b",
-      "name": "Qwen/Qwen3-Embedding-0.6B",
-      "category": "embeddings",
-      "release_date": null,
-      "source": "auto",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 1,
-      "sota_rank": null,
-      "sota_rank_open": null,
-      "metrics": "{}",
-      "last_updated": "2026-01-09T09:10:34.718342"
-    },
-    {
-      "id": "opensearch-project-opensearch-neural-sparse-encoding-doc-v2-distill",
-      "name": "opensearch-project/opensearch-neural-sparse-encoding-doc-v2-distill",
-      "category": "embeddings",
-      "release_date": null,
-      "source": "auto",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 1,
-      "sota_rank": null,
-      "sota_rank_open": null,
-      "metrics": "{}",
-      "last_updated": "2026-01-09T09:10:34.718347"
-    },
-    {
-      "id": "facebook-w2v-bert-2.0",
-      "name": "facebook/w2v-bert-2.0",
-      "category": "embeddings",
-      "release_date": null,
-      "source": "auto",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 1,
-      "sota_rank": null,
-      "sota_rank_open": null,
-      "metrics": "{}",
-      "last_updated": "2026-01-09T09:10:34.718352"
-    },
-    {
-      "id": "mixedbread-ai-mxbai-embed-large-v1",
-      "name": "mixedbread-ai/mxbai-embed-large-v1",
-      "category": "embeddings",
-      "release_date": null,
-      "source": "auto",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 1,
-      "sota_rank": null,
-      "sota_rank_open": null,
-      "metrics": "{}",
-      "last_updated": "2026-01-09T09:10:34.718357"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/zxhezexin/openlrm-mix-base-1.1",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "bge-m3",
@@ -224,7 +114,13 @@
       "sota_rank": 1,
       "sota_rank_open": 1,
       "metrics": "{\"notes\": \"#1 embeddings overall, multilingual (100+ langs), hybrid dense+sparse+ColBERT\", \"why_sota\": \"Best retrieval quality with hybrid approach, works across languages\", \"strengths\": [\"Multilingual\", \"Hybrid retrieval\", \"Dense+Sparse\", \"ColBERT support\"], \"use_cases\": [\"RAG systems\", \"Semantic search\", \"Multilingual search\", \"Document retrieval\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/BAAI/bge-m3",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "gte-qwen2-7b",
@@ -238,7 +134,13 @@
       "sota_rank": 2,
       "sota_rank_open": 2,
       "metrics": "{\"notes\": \"#2 embeddings, 7B param model, best for long documents (8K context)\", \"why_sota\": \"Highest quality for long document embedding, MTEB leader\", \"strengths\": [\"Long context\", \"High quality\", \"8K tokens\", \"MTEB leader\"], \"use_cases\": [\"Long documents\", \"Legal/medical RAG\", \"Research papers\", \"Book search\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/Alibaba-NLP/gte-Qwen2-7B-instruct",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "e5-mistral-7b",
@@ -252,7 +154,13 @@
       "sota_rank": 3,
       "sota_rank_open": 3,
       "metrics": "{\"notes\": \"#3 embeddings, instruction-tuned, excellent zero-shot performance\", \"why_sota\": \"Best zero-shot embedding quality, instruction-following embeddings\", \"strengths\": [\"Zero-shot\", \"Instruction-tuned\", \"Versatile\", \"Good defaults\"], \"use_cases\": [\"Zero-shot retrieval\", \"Custom domains\", \"Instruction-based search\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/intfloat/e5-mistral-7b-instruct",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "jina-embeddings-v3",
@@ -266,7 +174,13 @@
       "sota_rank": 4,
       "sota_rank_open": 4,
       "metrics": "{\"notes\": \"#4 embeddings, 8K context, late interaction support, task-specific LoRA\", \"why_sota\": \"Most versatile with task-specific adapters, good long-context support\", \"strengths\": [\"Task adapters\", \"8K context\", \"Versatile\", \"Late interaction\"], \"use_cases\": [\"Task-specific retrieval\", \"Code search\", \"Multilingual\", \"Reranking\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/jinaai/jina-embeddings-v3",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "cohere-embed-v3",
@@ -280,7 +194,13 @@
       "sota_rank": 5,
       "sota_rank_open": null,
       "metrics": "{\"notes\": \"#1 commercial embeddings API, compression support, 100+ languages\", \"why_sota\": \"Best commercial API with compression for cost savings\", \"strengths\": [\"API quality\", \"Compression\", \"100+ languages\", \"Enterprise support\"], \"use_cases\": [\"Enterprise RAG\", \"Production search\", \"Cost-optimized retrieval\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "qwen-image-edit-2511",
@@ -294,7 +214,13 @@
       "sota_rank": 1,
       "sota_rank_open": 1,
       "metrics": "{\"notes\": \"#1 image editing, natural language instructions, preserves unedited regions perfectly\", \"why_sota\": \"Best understanding of natural language edit requests, surgical precision\", \"strengths\": [\"Instruction following\", \"Region preservation\", \"Natural edits\", \"Multi-step editing\"], \"use_cases\": [\"Photo retouching\", \"Object removal/addition\", \"Background changes\", \"Style transfer\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/Qwen/Qwen-Image-Edit-2511",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "flux1-kontext",
@@ -308,7 +234,13 @@
       "sota_rank": 2,
       "sota_rank_open": 2,
       "metrics": "{\"notes\": \"#2 image editing, specialized in color/style transfer, maintains structure\", \"why_sota\": \"Best for recoloring and style changes while preserving composition\", \"strengths\": [\"Color transfer\", \"Style transfer\", \"Structure preservation\", \"Lighting changes\"], \"use_cases\": [\"Recoloring products\", \"Season changes\", \"Time-of-day changes\", \"Style variations\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "instructpix2pix",
@@ -322,7 +254,13 @@
       "sota_rank": 3,
       "sota_rank_open": 3,
       "metrics": "{\"notes\": \"#3 image editing, instruction-based editing, fast and lightweight\", \"why_sota\": \"Pioneer of instruction-based editing, fast inference, well-supported\", \"strengths\": [\"Fast\", \"Lightweight\", \"Well-documented\", \"Easy to use\"], \"use_cases\": [\"Quick edits\", \"Style changes\", \"Simple modifications\", \"Prototyping\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/timbrooks/instruct-pix2pix",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "adobe-firefly-edit",
@@ -336,7 +274,13 @@
       "sota_rank": 4,
       "sota_rank_open": null,
       "metrics": "{\"notes\": \"#1 commercial image editing, Photoshop integration, generative fill\", \"why_sota\": \"Best professional integration, Photoshop native, commercially safe\", \"strengths\": [\"Photoshop integration\", \"Commercially safe\", \"Generative fill\", \"Professional\"], \"use_cases\": [\"Professional editing\", \"Photoshop workflows\", \"Commercial projects\", \"Enterprise\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "ideogram-edit",
@@ -350,7 +294,13 @@
       "sota_rank": 5,
       "sota_rank_open": null,
       "metrics": "{\"notes\": \"#2 commercial image editing, best text preservation during edits\", \"why_sota\": \"Superior at preserving text when editing images with typography\", \"strengths\": [\"Text preservation\", \"Typography\", \"Web interface\", \"Quality\"], \"use_cases\": [\"Marketing materials\", \"Posters\", \"Typography edits\", \"Branding\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "gpt-image-1.5",
@@ -364,7 +314,13 @@
       "sota_rank": 1,
       "sota_rank_open": null,
       "metrics": "{\"notes\": \"#1 overall (1264 Elo), 4x faster than GPT-4o image, native text rendering\", \"why_sota\": \"Highest benchmark scores, best prompt adherence, superior text-in-image\", \"strengths\": [\"Text rendering\", \"Prompt accuracy\", \"Speed\", \"Photorealism\"], \"use_cases\": [\"Marketing assets\", \"UI mockups\", \"Any task needing text in images\"], \"elo\": 1264}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "gemini-3-pro-image",
@@ -378,7 +334,13 @@
       "sota_rank": 2,
       "sota_rank_open": null,
       "metrics": "{\"notes\": \"#2 overall (1235 Elo), strong across all categories, great diversity\", \"why_sota\": \"Excellent balance of quality, diversity, and consistency\", \"strengths\": [\"Diverse styles\", \"Consistency\", \"Creative interpretation\"], \"use_cases\": [\"Creative projects\", \"Varied style needs\", \"Exploration\"], \"elo\": 1235}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "z-image-turbo",
@@ -392,7 +354,13 @@
       "sota_rank": 3,
       "sota_rank_open": 1,
       "metrics": "{\"notes\": \"#1 open-source (1150 Elo), 6B params, runs on 16GB VRAM, ~$5/1k images self-hosted\", \"why_sota\": \"Best quality/efficiency ratio for open-source, production-ready speed\", \"strengths\": [\"Fast inference\", \"Low VRAM\", \"Cost-effective\", \"RTX 4090 compatible\"], \"use_cases\": [\"High-volume production\", \"Real-time apps\", \"Budget-conscious deployments\"], \"vram\": \"16GB\", \"elo\": 1150}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/stabilityai/z-image-turbo",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "flux2-dev",
@@ -406,7 +374,13 @@
       "sota_rank": 4,
       "sota_rank_open": 2,
       "metrics": "{\"notes\": \"#2 open-source, 32B params, multi-image consistency, needs 96GB VRAM (A100/H100)\", \"why_sota\": \"Best for consistent character/style across multiple images\", \"strengths\": [\"Character consistency\", \"Style consistency\", \"High detail\", \"Professional quality\"], \"use_cases\": [\"Comic/story generation\", \"Brand assets\", \"Character design\", \"Multi-shot campaigns\"], \"vram\": \"96GB\"}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/black-forest-labs/FLUX.2-dev",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "qwen-image-2512",
@@ -420,7 +394,13 @@
       "sota_rank": 5,
       "sota_rank_open": 3,
       "metrics": "{\"notes\": \"#3 open-source, best human realism/skin detail, 40GB+ VRAM, slow but highest quality portraits\", \"why_sota\": \"Unmatched photorealistic humans, skin texture, and facial detail\", \"strengths\": [\"Portrait quality\", \"Skin realism\", \"Human anatomy\", \"Natural lighting\"], \"use_cases\": [\"Portrait photography\", \"Fashion\", \"Character art\", \"Realistic humans\"], \"vram\": \"40GB+\"}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/Qwen/Qwen-Image-2512",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "claude-opus-4.5",
@@ -434,7 +414,13 @@
       "sota_rank": 1,
       "sota_rank_open": null,
       "metrics": "{\"notes\": \"#1 API LLM for complex reasoning, agentic tasks, and nuanced writing (Anthropic)\", \"why_sota\": \"Best at multi-step reasoning, code understanding, and maintaining context in long conversations\", \"strengths\": [\"Complex reasoning\", \"Code generation\", \"Long context retention\", \"Agentic workflows\"], \"use_cases\": [\"Software engineering\", \"Research assistance\", \"Complex analysis\", \"Agentic coding\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "gemini-3-pro",
@@ -447,8 +433,14 @@
       "is_open_source": 0,
       "sota_rank": 1,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1303, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644806"
+      "metrics": "{\"elo\": 1299, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.384804",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "claude-opus-4-5-20251101-thinking-32k",
@@ -461,8 +453,14 @@
       "is_open_source": 0,
       "sota_rank": 1,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1512, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644703"
+      "metrics": "{\"elo\": 1510, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.384604",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "chatgpt-image-latest-(20251216)",
@@ -475,8 +473,14 @@
       "is_open_source": 0,
       "sota_rank": 1,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1417, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644950"
+      "metrics": "{\"elo\": 1422, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.385059",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "gpt-5-2-(xhigh)",
@@ -489,8 +493,14 @@
       "is_open_source": 0,
       "sota_rank": 1,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
-      "last_updated": "2026-01-09T09:52:48.578905"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-14T05:06:16.374397\"}",
+      "last_updated": "2026-01-14T05:06:16.434532",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "gpt-4.5",
@@ -504,7 +514,33 @@
       "sota_rank": 2,
       "sota_rank_open": null,
       "metrics": "{\"notes\": \"#2 API LLM, strongest multimodal (vision, audio, image gen), OpenAI ecosystem\", \"why_sota\": \"Best integrated multimodal experience with vision, audio, and generation in one model\", \"strengths\": [\"Multimodal\", \"Vision\", \"Audio\", \"Image generation\", \"Ecosystem\"], \"use_cases\": [\"Multimodal apps\", \"Vision analysis\", \"Content creation\", \"ChatGPT plugins\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
+    },
+    {
+      "id": "grok-4-1-thinking",
+      "name": "grok-4.1-thinking",
+      "category": "llm_api",
+      "release_date": null,
+      "source": "lmarena",
+      "source_url": null,
+      "is_sota": 1,
+      "is_open_source": 0,
+      "sota_rank": 2,
+      "sota_rank_open": null,
+      "metrics": "{\"elo\": 1477, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.384353",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "gemini-3-flash",
@@ -517,12 +553,18 @@
       "is_open_source": 0,
       "sota_rank": 2,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1276, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644813"
+      "metrics": "{\"elo\": 1279, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.384823",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
-      "id": "gpt-5-2-high",
-      "name": "gpt-5.2-high",
+      "id": "claude-opus-4-5-20251101",
+      "name": "claude-opus-4-5-20251101",
       "category": "llm_api",
       "release_date": null,
       "source": "lmarena",
@@ -531,8 +573,14 @@
       "is_open_source": 0,
       "sota_rank": 2,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1480, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644712"
+      "metrics": "{\"elo\": 1480, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.384657",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "gemini-3-pro-image-preview-2k-(nano-banana-pro)",
@@ -545,8 +593,14 @@
       "is_open_source": 0,
       "sota_rank": 2,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1405, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644957"
+      "metrics": "{\"elo\": 1407, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.385079",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "gemini-2.0-pro",
@@ -560,35 +614,13 @@
       "sota_rank": 3,
       "sota_rank_open": null,
       "metrics": "{\"notes\": \"#3 API LLM, 1M+ token context, best for document analysis and research (Google)\", \"why_sota\": \"Largest context window, best for processing entire codebases or document collections\", \"strengths\": [\"1M+ context\", \"Document analysis\", \"Research\", \"Google integration\"], \"use_cases\": [\"Large document analysis\", \"Codebase review\", \"Research synthesis\", \"Book analysis\"]}",
-      "last_updated": "2026-01-09 14:03:48"
-    },
-    {
-      "id": "grok-4-1-thinking",
-      "name": "grok-4.1-thinking",
-      "category": "llm_api",
-      "release_date": null,
-      "source": "lmarena",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 0,
-      "sota_rank": 3,
-      "sota_rank_open": null,
-      "metrics": "{\"elo\": 1477, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644624"
-    },
-    {
-      "id": "claude-opus-4-5-20251101",
-      "name": "claude-opus-4-5-20251101",
-      "category": "llm_api",
-      "release_date": null,
-      "source": "lmarena",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 0,
-      "sota_rank": 3,
-      "sota_rank_open": null,
-      "metrics": "{\"elo\": 1479, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644723"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "gemini-3-flash-(thinking-minimal)",
@@ -601,12 +633,18 @@
       "is_open_source": 0,
       "sota_rank": 3,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1264, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644820"
+      "metrics": "{\"elo\": 1262, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.384840",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
-      "id": "gpt-image-1-5",
-      "name": "gpt-image-1.5",
+      "id": "gpt-5-2-high",
+      "name": "gpt-5.2-high",
       "category": "llm_api",
       "release_date": null,
       "source": "lmarena",
@@ -615,8 +653,34 @@
       "is_open_source": 0,
       "sota_rank": 3,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1403, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644964"
+      "metrics": "{\"elo\": 1476, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.384674",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
+    },
+    {
+      "id": "gemini-3-pro-image-preview-(nano-banana-pro)",
+      "name": "gemini-3-pro-image-preview (nano-banana-pro)",
+      "category": "llm_api",
+      "release_date": null,
+      "source": "lmarena",
+      "source_url": null,
+      "is_sota": 1,
+      "is_open_source": 0,
+      "sota_rank": 3,
+      "sota_rank_open": null,
+      "metrics": "{\"elo\": 1403, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.385097",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "gemini-3-pro-preview-(high)",
@@ -629,8 +693,14 @@
       "is_open_source": 0,
       "sota_rank": 3,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
-      "last_updated": "2026-01-09T09:52:48.579082"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-14T05:06:16.374397\"}",
+      "last_updated": "2026-01-14T05:06:16.434762",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "grok-4.1",
@@ -644,7 +714,13 @@
       "sota_rank": 4,
       "sota_rank_open": null,
       "metrics": "{\"notes\": \"#4 API LLM, #1 LMArena Elo, real-time X/Twitter data, uncensored\", \"why_sota\": \"Highest human preference scores, real-time information access, fewer content restrictions\", \"strengths\": [\"Human preference\", \"Real-time data\", \"Uncensored\", \"X integration\"], \"use_cases\": [\"Current events\", \"Social analysis\", \"Less filtered responses\", \"Real-time research\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "gemini-2-5-pro",
@@ -657,12 +733,18 @@
       "is_open_source": 0,
       "sota_rank": 4,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1249, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644827"
+      "metrics": "{\"elo\": 1249, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.384858",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
-      "id": "gemini-3-pro-image-preview-(nano-banana-pro)",
-      "name": "gemini-3-pro-image-preview (nano-banana-pro)",
+      "id": "gpt-image-1-5",
+      "name": "gpt-image-1.5",
       "category": "llm_api",
       "release_date": null,
       "source": "lmarena",
@@ -671,22 +753,14 @@
       "is_open_source": 0,
       "sota_rank": 4,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1400, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644972"
-    },
-    {
-      "id": "flux-2-max",
-      "name": "flux-2-max",
-      "category": "llm_api",
-      "release_date": null,
-      "source": "lmarena",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 1,
-      "sota_rank": 4,
-      "sota_rank_open": null,
-      "metrics": "{\"elo\": 1167, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644898"
+      "metrics": "{\"elo\": 1392, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.385350",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "gpt-5-1-(high)",
@@ -699,8 +773,14 @@
       "is_open_source": 0,
       "sota_rank": 4,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
-      "last_updated": "2026-01-09T09:52:48.579090"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-14T05:06:16.374397\"}",
+      "last_updated": "2026-01-14T05:06:16.434803",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "deepseek-v3-api",
@@ -714,7 +794,13 @@
       "sota_rank": 5,
       "sota_rank_open": 1,
       "metrics": "{\"notes\": \"#1 open-source API, $0.07/M input tokens, open weights available, GPT-4 class\", \"why_sota\": \"Best cost/performance ratio, open weights for self-hosting option\", \"strengths\": [\"Cheapest API\", \"Open weights\", \"GPT-4 class\", \"Self-host option\"], \"use_cases\": [\"Cost-sensitive apps\", \"High-volume generation\", \"Self-hosting backup\", \"Budget projects\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "gpt-5-1-high",
@@ -727,8 +813,14 @@
       "is_open_source": 0,
       "sota_rank": 5,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1248, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644833"
+      "metrics": "{\"elo\": 1249, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.384875",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "seedream-4-5",
@@ -741,8 +833,14 @@
       "is_open_source": 1,
       "sota_rank": 5,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1331, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644978"
+      "metrics": "{\"elo\": 1333, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.385374",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "mistral-large-api",
@@ -756,7 +854,13 @@
       "sota_rank": 6,
       "sota_rank_open": 2,
       "metrics": "{\"notes\": \"#2 open-source API (EU), 123B MoE, strong multilingual, GDPR compliant\", \"why_sota\": \"Best European option with GDPR compliance, strong multilingual support\", \"strengths\": [\"EU-based\", \"GDPR compliant\", \"Multilingual\", \"MoE efficient\"], \"use_cases\": [\"European deployments\", \"GDPR requirements\", \"Multilingual apps\", \"Enterprise EU\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "grok-4-1",
@@ -769,12 +873,18 @@
       "is_open_source": 0,
       "sota_rank": 6,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1466, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644655"
+      "metrics": "{\"elo\": 1466, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.384466",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
-      "id": "minimax-m2-1-preview",
-      "name": "minimax-m2.1-preview",
+      "id": "glm-4-7",
+      "name": "glm-4.7",
       "category": "llm_api",
       "release_date": null,
       "source": "lmarena",
@@ -783,8 +893,14 @@
       "is_open_source": 1,
       "sota_rank": 6,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1445, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644753"
+      "metrics": "{\"elo\": 1448, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.384733",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "gpt-5-1",
@@ -797,8 +913,14 @@
       "is_open_source": 0,
       "sota_rank": 6,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1238, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644841"
+      "metrics": "{\"elo\": 1241, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.384886",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "gemini-2-5-flash-image-preview-(nano-banana)",
@@ -811,8 +933,14 @@
       "is_open_source": 0,
       "sota_rank": 6,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1322, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644986"
+      "metrics": "{\"elo\": 1325, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.385401",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "flux-2-flex",
@@ -825,8 +953,14 @@
       "is_open_source": 1,
       "sota_rank": 6,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1155, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644911"
+      "metrics": "{\"elo\": 1153, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.385003",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "gpt-5-2-(medium)",
@@ -839,8 +973,14 @@
       "is_open_source": 0,
       "sota_rank": 6,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
-      "last_updated": "2026-01-09T09:52:48.579100"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-14T05:06:16.374397\"}",
+      "last_updated": "2026-01-14T05:06:16.434836",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "llama-3.3-together",
@@ -854,11 +994,17 @@
       "sota_rank": 7,
       "sota_rank_open": 3,
       "metrics": "{\"notes\": \"#3 open-source API, Meta's Llama hosted by Together, $0.88/M tokens\", \"why_sota\": \"Best hosted Llama option with competitive pricing and reliability\", \"strengths\": [\"Llama quality\", \"Together reliability\", \"Open weights\", \"Good pricing\"], \"use_cases\": [\"Llama fans\", \"Open-source preference\", \"Self-host fallback\", \"Research\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
-      "id": "glm-4-7",
-      "name": "glm-4.7",
+      "id": "minimax-m2-1-preview",
+      "name": "minimax-m2.1-preview",
       "category": "llm_api",
       "release_date": null,
       "source": "lmarena",
@@ -867,8 +1013,14 @@
       "is_open_source": 1,
       "sota_rank": 7,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1441, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644761"
+      "metrics": "{\"elo\": 1427, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.384748",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "chatgpt-4o-latest-20250326",
@@ -881,22 +1033,14 @@
       "is_open_source": 0,
       "sota_rank": 7,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1236, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644848"
-    },
-    {
-      "id": "flux-2-pro",
-      "name": "flux-2-pro",
-      "category": "llm_api",
-      "release_date": null,
-      "source": "lmarena",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 1,
-      "sota_rank": 7,
-      "sota_rank_open": null,
-      "metrics": "{\"elo\": 1152, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644919"
+      "metrics": "{\"elo\": 1235, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.384898",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "seedream-4-2k",
@@ -909,8 +1053,14 @@
       "is_open_source": 1,
       "sota_rank": 7,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1312, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644994"
+      "metrics": "{\"elo\": 1289, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.385422",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "claude-opus-4-5",
@@ -923,12 +1073,18 @@
       "is_open_source": 0,
       "sota_rank": 7,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
-      "last_updated": "2026-01-09T09:52:48.579107"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-14T05:06:16.374397\"}",
+      "last_updated": "2026-01-14T05:06:16.434894",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
-      "id": "gpt-5-medium",
-      "name": "gpt-5-medium",
+      "id": "gpt-5-2",
+      "name": "gpt-5.2",
       "category": "llm_api",
       "release_date": null,
       "source": "lmarena",
@@ -937,12 +1093,38 @@
       "is_open_source": 0,
       "sota_rank": 8,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1395, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644771"
+      "metrics": "{\"elo\": 1401, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.384760",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
-      "id": "ernie-5-0-preview-1220",
-      "name": "ernie-5.0-preview-1220",
+      "id": "gemini-2-5-flash-preview-09-2025",
+      "name": "gemini-2.5-flash-preview-09-2025",
+      "category": "llm_api",
+      "release_date": null,
+      "source": "lmarena",
+      "source_url": null,
+      "is_sota": 1,
+      "is_open_source": 0,
+      "sota_rank": 8,
+      "sota_rank_open": null,
+      "metrics": "{\"elo\": 1226, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.384910",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
+    },
+    {
+      "id": "flux-2-max",
+      "name": "flux-2-max",
       "category": "llm_api",
       "release_date": null,
       "source": "lmarena",
@@ -951,8 +1133,14 @@
       "is_open_source": 1,
       "sota_rank": 8,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1226, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644855"
+      "metrics": "{\"elo\": 1278, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.385441",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "hunyuan-image-3-0",
@@ -965,26 +1153,18 @@
       "is_open_source": 1,
       "sota_rank": 8,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1151, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644926"
+      "metrics": "{\"elo\": 1150, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.385025",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
-      "id": "reve-v1-1",
-      "name": "reve-v1.1",
-      "category": "llm_api",
-      "release_date": null,
-      "source": "lmarena",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 1,
-      "sota_rank": 8,
-      "sota_rank_open": null,
-      "metrics": "{\"elo\": 1261, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.645004"
-    },
-    {
-      "id": "gpt-5-2",
-      "name": "gpt-5.2",
+      "id": "claude-sonnet-4-5-20250929-thinking-32k",
+      "name": "claude-sonnet-4-5-20250929-thinking-32k",
       "category": "llm_api",
       "release_date": null,
       "source": "lmarena",
@@ -993,8 +1173,34 @@
       "is_open_source": 0,
       "sota_rank": 9,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1394, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644781"
+      "metrics": "{\"elo\": 1452, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.384520",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
+    },
+    {
+      "id": "gpt-5-medium",
+      "name": "gpt-5-medium",
+      "category": "llm_api",
+      "release_date": null,
+      "source": "lmarena",
+      "source_url": null,
+      "is_sota": 1,
+      "is_open_source": 0,
+      "sota_rank": 9,
+      "sota_rank_open": null,
+      "metrics": "{\"elo\": 1397, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.384772",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "gpt-4-5-preview-2025-02-27",
@@ -1007,12 +1213,58 @@
       "is_open_source": 0,
       "sota_rank": 9,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1225, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644861"
+      "metrics": "{\"elo\": 1226, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.384922",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
-      "id": "claude-sonnet-4-5-20250929-thinking-32k",
-      "name": "claude-sonnet-4-5-20250929-thinking-32k",
+      "id": "flux-2-pro",
+      "name": "flux-2-pro",
+      "category": "llm_api",
+      "release_date": null,
+      "source": "lmarena",
+      "source_url": null,
+      "is_sota": 1,
+      "is_open_source": 1,
+      "sota_rank": 9,
+      "sota_rank_open": null,
+      "metrics": "{\"elo\": 1261, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.385459",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
+    },
+    {
+      "id": "imagen-4-0-ultra-generate-preview-06-06",
+      "name": "imagen-4.0-ultra-generate-preview-06-06",
+      "category": "llm_api",
+      "release_date": null,
+      "source": "lmarena",
+      "source_url": null,
+      "is_sota": 1,
+      "is_open_source": 0,
+      "sota_rank": 9,
+      "sota_rank_open": null,
+      "metrics": "{\"elo\": 1143, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.385037",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
+    },
+    {
+      "id": "gpt-5-1-medium",
+      "name": "gpt-5.1-medium",
       "category": "llm_api",
       "release_date": null,
       "source": "lmarena",
@@ -1021,8 +1273,14 @@
       "is_open_source": 0,
       "sota_rank": 10,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1391, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644800"
+      "metrics": "{\"elo\": 1392, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.384784",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "gpt-5-chat",
@@ -1035,26 +1293,18 @@
       "is_open_source": 0,
       "sota_rank": 10,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1223, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644868"
+      "metrics": "{\"elo\": 1223, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.384934",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
-      "id": "imagen-4-0-ultra-generate-preview-06-06",
-      "name": "imagen-4.0-ultra-generate-preview-06-06",
-      "category": "llm_api",
-      "release_date": null,
-      "source": "lmarena",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 0,
-      "sota_rank": 10,
-      "sota_rank_open": null,
-      "metrics": "{\"elo\": 1144, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.644942"
-    },
-    {
-      "id": "reve-v1",
-      "name": "reve-v1",
+      "id": "reve-v1-1",
+      "name": "reve-v1.1",
       "category": "llm_api",
       "release_date": null,
       "source": "lmarena",
@@ -1063,8 +1313,14 @@
       "is_open_source": 1,
       "sota_rank": 10,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": 1249, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-09T09:52:41.609456\"}",
-      "last_updated": "2026-01-09T09:52:41.645026"
+      "metrics": "{\"elo\": 1261, \"notes\": \"Auto-scraped from lmarena\", \"scraped_from\": \"lmarena\", \"scraped_at\": \"2026-01-14T05:06:11.332703\"}",
+      "last_updated": "2026-01-14T05:06:11.385470",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "gpt-5-1-codex-(high)",
@@ -1077,8 +1333,14 @@
       "is_open_source": 0,
       "sota_rank": 10,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
-      "last_updated": "2026-01-09T09:52:48.579123"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-14T05:06:16.374397\"}",
+      "last_updated": "2026-01-14T05:06:16.434963",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "grok-4",
@@ -1091,8 +1353,14 @@
       "is_open_source": 0,
       "sota_rank": 11,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
-      "last_updated": "2026-01-09T09:52:48.579130"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-14T05:06:16.374397\"}",
+      "last_updated": "2026-01-14T05:06:16.434981",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "deepseek-v3-2",
@@ -1105,8 +1373,14 @@
       "is_open_source": 1,
       "sota_rank": 12,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
-      "last_updated": "2026-01-09T09:52:48.579137"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-14T05:06:16.374397\"}",
+      "last_updated": "2026-01-14T05:06:16.434998",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "o3",
@@ -1119,8 +1393,14 @@
       "is_open_source": 1,
       "sota_rank": 13,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
-      "last_updated": "2026-01-09T09:52:48.579144"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-14T05:06:16.374397\"}",
+      "last_updated": "2026-01-14T05:06:16.435015",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "gpt-5-mini-(high)",
@@ -1133,8 +1413,14 @@
       "is_open_source": 0,
       "sota_rank": 14,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
-      "last_updated": "2026-01-09T09:52:48.579150"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-14T05:06:16.374397\"}",
+      "last_updated": "2026-01-14T05:06:16.435032",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "gemini-3-pro-preview-(low)",
@@ -1147,8 +1433,14 @@
       "is_open_source": 0,
       "sota_rank": 15,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
-      "last_updated": "2026-01-09T09:52:48.579157"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-14T05:06:16.374397\"}",
+      "last_updated": "2026-01-14T05:06:16.435050",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "kimi-k2-thinking",
@@ -1161,8 +1453,14 @@
       "is_open_source": 1,
       "sota_rank": 16,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
-      "last_updated": "2026-01-09T09:52:48.579164"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-14T05:06:16.374397\"}",
+      "last_updated": "2026-01-14T05:06:16.435066",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "minimax-m2-1",
@@ -1175,8 +1473,14 @@
       "is_open_source": 1,
       "sota_rank": 17,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
-      "last_updated": "2026-01-09T09:52:48.579170"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-14T05:06:16.374397\"}",
+      "last_updated": "2026-01-14T05:06:16.435083",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "mimo-v2-flash",
@@ -1189,8 +1493,14 @@
       "is_open_source": 1,
       "sota_rank": 18,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
-      "last_updated": "2026-01-09T09:52:48.579178"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-14T05:06:16.374397\"}",
+      "last_updated": "2026-01-14T05:06:16.435099",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "grok-4-1-fast",
@@ -1203,8 +1513,14 @@
       "is_open_source": 0,
       "sota_rank": 19,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
-      "last_updated": "2026-01-09T09:52:48.579191"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-14T05:06:16.374397\"}",
+      "last_updated": "2026-01-14T05:06:16.435116",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "gpt-5-1-codex-mini-(high)",
@@ -1217,22 +1533,14 @@
       "is_open_source": 0,
       "sota_rank": 20,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
-      "last_updated": "2026-01-09T09:52:48.579197"
-    },
-    {
-      "id": "claude-4-5-sonnet",
-      "name": "Claude 4.5 Sonnet",
-      "category": "llm_api",
-      "release_date": null,
-      "source": "artificial_analysis",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 0,
-      "sota_rank": 21,
-      "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
-      "last_updated": "2026-01-09T09:52:48.579203"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-14T05:06:16.374397\"}",
+      "last_updated": "2026-01-14T05:06:16.435134",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "claude-4-5-haiku",
@@ -1243,10 +1551,36 @@
       "source_url": null,
       "is_sota": 1,
       "is_open_source": 0,
+      "sota_rank": 21,
+      "sota_rank_open": null,
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-14T05:06:16.374397\"}",
+      "last_updated": "2026-01-14T05:06:16.435151",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
+    },
+    {
+      "id": "claude-4-5-sonnet",
+      "name": "Claude 4.5 Sonnet",
+      "category": "llm_api",
+      "release_date": null,
+      "source": "artificial_analysis",
+      "source_url": null,
+      "is_sota": 1,
+      "is_open_source": 0,
       "sota_rank": 22,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
-      "last_updated": "2026-01-09T09:52:48.579210"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-14T05:06:16.374397\"}",
+      "last_updated": "2026-01-14T05:06:16.435184",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "kat-coder-pro-v1",
@@ -1259,8 +1593,14 @@
       "is_open_source": 1,
       "sota_rank": 23,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
-      "last_updated": "2026-01-09T09:52:48.579216"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-14T05:06:16.374397\"}",
+      "last_updated": "2026-01-14T05:06:16.435202",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "minimax-m2",
@@ -1273,8 +1613,14 @@
       "is_open_source": 1,
       "sota_rank": 24,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
-      "last_updated": "2026-01-09T09:52:48.579222"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-14T05:06:16.374397\"}",
+      "last_updated": "2026-01-14T05:06:16.435223",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "nova-2-0-pro-preview-(medium)",
@@ -1287,8 +1633,14 @@
       "is_open_source": 1,
       "sota_rank": 25,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
-      "last_updated": "2026-01-09T09:52:48.579229"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-14T05:06:16.374397\"}",
+      "last_updated": "2026-01-14T05:06:16.435242",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "grok-4-fast",
@@ -1301,22 +1653,34 @@
       "is_open_source": 0,
       "sota_rank": 27,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
-      "last_updated": "2026-01-09T09:52:48.579236"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-14T05:06:16.374397\"}",
+      "last_updated": "2026-01-14T05:06:16.435265",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
-      "id": "deepseek-v3-2-speciale",
-      "name": "DeepSeek V3.2 Speciale",
+      "id": "deepseek-v3-1-terminus",
+      "name": "DeepSeek V3.1 Terminus",
       "category": "llm_api",
       "release_date": null,
       "source": "artificial_analysis",
       "source_url": null,
       "is_sota": 1,
       "is_open_source": 1,
-      "sota_rank": 29,
+      "sota_rank": 30,
       "sota_rank_open": null,
-      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-09T09:52:48.541787\"}",
-      "last_updated": "2026-01-09T09:52:48.579246"
+      "metrics": "{\"elo\": null, \"notes\": \"Auto-scraped from artificial_analysis\", \"scraped_from\": \"artificial_analysis\", \"scraped_at\": \"2026-01-14T05:06:16.374397\"}",
+      "last_updated": "2026-01-14T05:06:16.435318",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "qwen3-coder",
@@ -1330,7 +1694,13 @@
       "sota_rank": 1,
       "sota_rank_open": 1,
       "metrics": "{\"notes\": \"#1 open-source coder, 262K native context (1M with YaRN), beats GPT-4 on HumanEval\", \"why_sota\": \"Largest code context window in open-source, excellent at multi-file understanding\", \"strengths\": [\"262K context\", \"Multi-file projects\", \"Codebase understanding\", \"HumanEval leader\"], \"use_cases\": [\"Large codebase work\", \"Refactoring\", \"Code review\", \"IDE integration\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct-GGUF",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "deepseek-v3-coder",
@@ -1344,7 +1714,13 @@
       "sota_rank": 2,
       "sota_rank_open": 2,
       "metrics": "{\"notes\": \"#2 open-source coder, 78% MMLU-Pro CS, cheapest capable coding model at $0.07/M tokens\", \"why_sota\": \"Best cost/performance for code generation, strong at algorithmic problems\", \"strengths\": [\"Cost efficiency\", \"Algorithms\", \"Math/CS\", \"API availability\"], \"use_cases\": [\"Budget coding assistant\", \"LeetCode-style problems\", \"Algorithm design\", \"API coding\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/deepseek-ai/DeepSeek-V3-GGUF",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "claude-opus-4.5-coding",
@@ -1358,7 +1734,13 @@
       "sota_rank": 3,
       "sota_rank_open": null,
       "metrics": "{\"notes\": \"#1 closed-source coder, best at complex multi-step code reasoning and agentic coding\", \"why_sota\": \"Unmatched at understanding complex codebases and making coordinated multi-file changes\", \"strengths\": [\"Complex reasoning\", \"Multi-file edits\", \"Agentic coding\", \"Code explanation\"], \"use_cases\": [\"Claude Code CLI\", \"Complex refactoring\", \"Architecture decisions\", \"Code review\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "cursor-claude",
@@ -1372,7 +1754,13 @@
       "sota_rank": 4,
       "sota_rank_open": null,
       "metrics": "{\"notes\": \"#2 closed-source coder, IDE-integrated with Claude, best autocomplete and inline editing\", \"why_sota\": \"Best IDE integration with context-aware autocomplete and inline code editing\", \"strengths\": [\"IDE integration\", \"Autocomplete\", \"Inline editing\", \"Context awareness\"], \"use_cases\": [\"VS Code replacement\", \"Real-time coding assistance\", \"Autocomplete\", \"Quick edits\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "starcoder2-15b",
@@ -1386,11 +1774,17 @@
       "sota_rank": 5,
       "sota_rank_open": 3,
       "metrics": "{\"notes\": \"#3 open-source coder, 16K context, 600+ languages, trained on The Stack v2\", \"why_sota\": \"Widest language support (600+), best for polyglot codebases\", \"strengths\": [\"600+ languages\", \"Fast inference\", \"Low VRAM\", \"Well-documented\"], \"use_cases\": [\"Multi-language projects\", \"Code completion\", \"Smaller deployments\", \"Edge devices\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/bigcode/starcoder2-15b-GGUF",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
-      "id": "qwen3",
-      "name": "Qwen 3 (Alibaba)",
+      "id": "qwen3-32b",
+      "name": "Qwen 3-32B",
       "category": "llm_local",
       "release_date": "2026-01-01",
       "source": "manual",
@@ -1399,8 +1793,94 @@
       "is_open_source": 1,
       "sota_rank": 1,
       "sota_rank_open": 1,
-      "metrics": "{\"notes\": \"#1 local LLM (Alibaba Qwen team), beats DeepSeek-V3 and Llama 4 on MMLU/BBH\", \"why_sota\": \"New benchmark leader with innovative hybrid reasoning that adapts to task complexity\", \"strengths\": [\"Benchmark scores\", \"Hybrid reasoning\", \"Efficiency\", \"Multilingual\"], \"use_cases\": [\"General assistant\", \"Complex reasoning\", \"Multilingual tasks\", \"Research\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "metrics": "{\"notes\": \"#1 local LLM, best single-GPU model, beats GPT-4o on most benchmarks\", \"why_sota\": \"New benchmark leader, fits RTX 4090/5090 with excellent quality\", \"strengths\": [\"Benchmark scores\", \"Hybrid reasoning\", \"Single GPU\", \"Multilingual\"], \"use_cases\": [\"Daily assistant\", \"Complex reasoning\", \"RTX 4090/5090 optimal\"], \"vram_gb\": 19, \"quantization\": \"Q4_K_M\", \"is_uncensored\": false, \"uncensored_variant\": \"mradermacher/Qwen3-32B-Uncensored-GGUF\"}",
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/Qwen/Qwen3-32B-GGUF",
+      "price_per_1m_input": null,
+      "elo_score": null
+    },
+    {
+      "id": "qwen3-30b-a3b",
+      "name": "Qwen 3-30B-A3B (MoE)",
+      "category": "llm_local",
+      "release_date": "2026-01-01",
+      "source": "manual",
+      "source_url": null,
+      "is_sota": 1,
+      "is_open_source": 1,
+      "sota_rank": 2,
+      "sota_rank_open": 2,
+      "metrics": "{\"notes\": \"#2 local LLM, 30B MoE with only 3B active, extremely fast inference\", \"why_sota\": \"Best speed/quality ratio, MoE efficiency lets it run alongside other GPU tasks\", \"strengths\": [\"Speed\", \"MoE efficiency\", \"Low active VRAM\", \"Multi-tasking friendly\"], \"use_cases\": [\"Interactive chat\", \"Running alongside image gen\", \"Real-time applications\"], \"vram_gb\": 18, \"quantization\": \"Q4_K_M\", \"active_params\": \"3B\", \"is_uncensored\": false}",
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/Qwen/Qwen3-30B-A3B-GGUF",
+      "price_per_1m_input": null,
+      "elo_score": null
+    },
+    {
+      "id": "qwen3-8b",
+      "name": "Qwen 3-8B",
+      "category": "llm_local",
+      "release_date": "2026-01-01",
+      "source": "manual",
+      "source_url": null,
+      "is_sota": 1,
+      "is_open_source": 1,
+      "sota_rank": 3,
+      "sota_rank_open": 3,
+      "metrics": "{\"notes\": \"#3 local LLM, best small model, rivals larger 32B models from 2024\", \"why_sota\": \"Incredible quality at 8B size, fits alongside image/video gen workloads\", \"strengths\": [\"Small footprint\", \"Quality/size ratio\", \"Concurrent workloads\", \"Fast\"], \"use_cases\": [\"Daily chat while running FLUX/Wan\", \"Laptops\", \"Edge devices\"], \"vram_gb\": 6, \"quantization\": \"Q5_K_M\", \"is_uncensored\": false, \"uncensored_variant\": \"mradermacher/Josiefied-Qwen3-8B-abliterated-v1-GGUF\"}",
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/Qwen/Qwen3-8B-GGUF",
+      "price_per_1m_input": null,
+      "elo_score": null
+    },
+    {
+      "id": "deepseek-r1-32b",
+      "name": "DeepSeek R1-32B (Reasoning)",
+      "category": "llm_local",
+      "release_date": "2025-12-01",
+      "source": "manual",
+      "source_url": null,
+      "is_sota": 1,
+      "is_open_source": 1,
+      "sota_rank": 4,
+      "sota_rank_open": 4,
+      "metrics": "{\"notes\": \"#4 local LLM, specialized reasoning model, o1-level on math/logic\", \"why_sota\": \"Best open-source reasoning model, excels at multi-step problems\", \"strengths\": [\"Math reasoning\", \"Logic\", \"Chain-of-thought\", \"Problem solving\"], \"use_cases\": [\"Complex reasoning\", \"Math problems\", \"Code debugging\", \"Analysis\"], \"vram_gb\": 22, \"quantization\": \"Q5_K_M\", \"is_uncensored\": false}",
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B-GGUF",
+      "price_per_1m_input": null,
+      "elo_score": null
+    },
+    {
+      "id": "qwq-32b",
+      "name": "QwQ-32B (Reasoning)",
+      "category": "llm_local",
+      "release_date": "2025-11-01",
+      "source": "manual",
+      "source_url": null,
+      "is_sota": 1,
+      "is_open_source": 1,
+      "sota_rank": 5,
+      "sota_rank_open": 5,
+      "metrics": "{\"notes\": \"#5 local LLM, Alibaba's reasoning model, competitive with DeepSeek-R1\", \"why_sota\": \"Strong reasoning with slightly better general knowledge than R1\", \"strengths\": [\"Reasoning\", \"General knowledge\", \"Instruction following\"], \"use_cases\": [\"Complex reasoning\", \"Research\", \"Analysis\"], \"vram_gb\": 19, \"quantization\": \"Q4_K_M\", \"is_uncensored\": false, \"uncensored_variant\": \"mradermacher/QwQ-32B-Uncensored-GGUF\"}",
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/Qwen/QwQ-32B-Preview-GGUF",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "llama3.3-70b",
@@ -1411,66 +1891,96 @@
       "source_url": null,
       "is_sota": 1,
       "is_open_source": 1,
-      "sota_rank": 2,
-      "sota_rank_open": 2,
-      "metrics": "{\"notes\": \"#2 local LLM, GPT-4 class performance, 40GB GGUF, runs on 64GB MacBook or dual RTX 4090\", \"why_sota\": \"Best balance of capability and deployment flexibility, Meta's most capable open model\", \"strengths\": [\"GPT-4 class\", \"Instruction following\", \"Safety\", \"Wide deployment support\"], \"use_cases\": [\"Enterprise deployments\", \"Safe assistant\", \"General purpose\", \"MacBook Pro M3 Max\"], \"vram\": \"40GB\"}",
-      "last_updated": "2026-01-09 14:03:48"
+      "sota_rank": 6,
+      "sota_rank_open": 6,
+      "metrics": "{\"notes\": \"#6 local LLM, GPT-4 class, needs 40GB+ VRAM or dual GPU setup\", \"why_sota\": \"Meta's most capable open model, enterprise-grade safety\", \"strengths\": [\"GPT-4 class\", \"Safety\", \"Instruction following\"], \"use_cases\": [\"Enterprise\", \"Safety-critical apps\", \"64GB MacBook Pro\"], \"vram_gb\": 40, \"quantization\": \"Q4_K_M\", \"is_uncensored\": false}",
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct-GGUF",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "deepseek-v3",
-      "name": "DeepSeek V3 (DeepSeek)",
+      "name": "DeepSeek V3 (MoE)",
       "category": "llm_local",
       "release_date": "2025-12-25",
       "source": "manual",
       "source_url": null,
       "is_sota": 1,
       "is_open_source": 1,
-      "sota_rank": 3,
-      "sota_rank_open": 3,
-      "metrics": "{\"notes\": \"#3 local LLM, 671B MoE (37B active), 78% MMLU-Pro, cheapest API at $0.07/M tokens\", \"why_sota\": \"Most efficient MoE architecture, GPT-4 quality at 1/10th the cost\", \"strengths\": [\"Cost efficiency\", \"MoE architecture\", \"Code generation\", \"Math/reasoning\"], \"use_cases\": [\"Cost-sensitive deployments\", \"Code generation\", \"Math problems\", \"API fallback\"], \"vram\": \"37GB active\"}",
-      "last_updated": "2026-01-09 14:03:48"
+      "sota_rank": 7,
+      "sota_rank_open": 7,
+      "metrics": "{\"notes\": \"#7 local LLM, 671B MoE (37B active), needs multi-GPU or API access\", \"why_sota\": \"Most capable open model overall, but requires significant hardware\", \"strengths\": [\"Raw capability\", \"Code\", \"Math\", \"Multi-GPU clusters\"], \"use_cases\": [\"API fallback\", \"Multi-GPU setups\", \"Maximum quality needs\"], \"vram_gb\": 37, \"quantization\": \"Q4_K_M\", \"is_uncensored\": false, \"note\": \"Requires multi-GPU for local deployment\"}",
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/deepseek-ai/DeepSeek-V3-GGUF",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
-      "id": "qwen2.5-72b",
-      "name": "Qwen 2.5-72B (Alibaba)",
+      "id": "josiefied-qwen3-8b",
+      "name": "JOSIEFIED-Qwen3-8B",
       "category": "llm_local",
-      "release_date": "2025-09-01",
+      "release_date": "2026-01-05",
       "source": "manual",
       "source_url": null,
       "is_sota": 1,
       "is_open_source": 1,
-      "sota_rank": 4,
-      "sota_rank_open": 4,
-      "metrics": "{\"notes\": \"#4 local LLM, excellent math/reasoning, 41GB GGUF Q4, strong Chinese support\", \"why_sota\": \"Best for mathematical reasoning and Chinese language tasks\", \"strengths\": [\"Math reasoning\", \"Chinese language\", \"Long context\", \"Instruction following\"], \"use_cases\": [\"Math tutoring\", \"Chinese content\", \"Academic research\", \"Data analysis\"], \"vram\": \"41GB\"}",
-      "last_updated": "2026-01-09 14:03:48"
+      "sota_rank": 8,
+      "sota_rank_open": 8,
+      "metrics": "{\"notes\": \"Uncensored Qwen3-8B, JOSIEFIED abliteration + fine-tuning for better quality\", \"why_sota\": \"Best uncensored small model, JOSIEFIED preserves quality better than pure abliteration\", \"strengths\": [\"Uncensored\", \"Small footprint\", \"Quality preserved\", \"Creative freedom\"], \"use_cases\": [\"Creative writing\", \"Roleplay\", \"Unrestricted chat\", \"Running alongside GPU tasks\"], \"vram_gb\": 6, \"quantization\": \"Q5_K_M\", \"is_uncensored\": true, \"hf_repo\": \"mradermacher/Josiefied-Qwen3-8B-abliterated-v1-GGUF\", \"base_model\": \"qwen3-8b\"}",
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/mradermacher/Josiefied-Qwen3-8B-abliterated-v1-GGUF",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
-      "id": "qwen2.5-32b",
-      "name": "Qwen 2.5-32B (Alibaba)",
+      "id": "qwen3-32b-uncensored",
+      "name": "Qwen3-32B-Uncensored",
       "category": "llm_local",
-      "release_date": "2025-09-01",
+      "release_date": "2026-01-05",
       "source": "manual",
       "source_url": null,
       "is_sota": 1,
       "is_open_source": 1,
-      "sota_rank": 5,
-      "sota_rank_open": 5,
-      "metrics": "{\"notes\": \"#5 local LLM, best quality/speed balance, 19GB GGUF Q4, fits RTX 4090/3090\", \"why_sota\": \"Sweet spot for single high-end consumer GPU with excellent quality\", \"strengths\": [\"Single GPU\", \"Good quality\", \"Fast inference\", \"RTX 4090 optimal\"], \"use_cases\": [\"Personal assistant\", \"RTX 4090 builds\", \"Interactive use\", \"Balanced workloads\"], \"vram\": \"19GB\"}",
-      "last_updated": "2026-01-09 14:03:48"
+      "sota_rank": 9,
+      "sota_rank_open": 9,
+      "metrics": "{\"notes\": \"Uncensored Qwen3-32B, abliterated variant without safety guardrails\", \"why_sota\": \"Full Qwen3-32B quality without restrictions\", \"strengths\": [\"Uncensored\", \"Full 32B quality\", \"Creative freedom\", \"Single GPU\"], \"use_cases\": [\"Creative writing\", \"Unrestricted research\", \"Roleplay\"], \"vram_gb\": 19, \"quantization\": \"Q4_K_M\", \"is_uncensored\": true, \"hf_repo\": \"mradermacher/Qwen3-32B-Uncensored-GGUF\", \"base_model\": \"qwen3-32b\"}",
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/mradermacher/Qwen3-32B-Uncensored-GGUF",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
-      "id": "qwen2.5-7b",
-      "name": "Qwen 2.5-7B (Alibaba)",
+      "id": "qwq-32b-uncensored",
+      "name": "QwQ-32B-Uncensored",
       "category": "llm_local",
-      "release_date": "2025-09-01",
+      "release_date": "2025-12-01",
       "source": "manual",
       "source_url": null,
       "is_sota": 1,
       "is_open_source": 1,
-      "sota_rank": 6,
-      "sota_rank_open": 6,
-      "metrics": "{\"notes\": \"#6 local LLM, best small model, 4.4GB GGUF Q4, runs on laptops and mobile\", \"why_sota\": \"Best quality in the 7B class, optimal for resource-constrained deployments\", \"strengths\": [\"Small footprint\", \"Fast\", \"Low VRAM\", \"Edge deployment\"], \"use_cases\": [\"Laptops\", \"Edge devices\", \"Quick tasks\", \"Prototyping\", \"RTX 3060/4060\"], \"vram\": \"4.4GB\"}",
-      "last_updated": "2026-01-09 14:03:48"
+      "sota_rank": 10,
+      "sota_rank_open": 10,
+      "metrics": "{\"notes\": \"Uncensored QwQ-32B reasoning model, abliterated variant\", \"why_sota\": \"Best uncensored reasoning model, full QwQ quality without restrictions\", \"strengths\": [\"Uncensored\", \"Reasoning\", \"No refusals on complex topics\"], \"use_cases\": [\"Unrestricted reasoning\", \"Research\", \"Complex analysis without guardrails\"], \"vram_gb\": 19, \"quantization\": \"Q4_K_M\", \"is_uncensored\": true, \"hf_repo\": \"mradermacher/QwQ-32B-Uncensored-GGUF\", \"base_model\": \"qwq-32b\"}",
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/mradermacher/QwQ-32B-Uncensored-GGUF",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "suno-v4",
@@ -1484,7 +1994,13 @@
       "sota_rank": 1,
       "sota_rank_open": null,
       "metrics": "{\"notes\": \"#1 music generation, best vocal quality and song structure, full songs with lyrics\", \"why_sota\": \"Most realistic vocals, best at maintaining song structure and coherence\", \"strengths\": [\"Vocal quality\", \"Song structure\", \"Lyrics\", \"Genre variety\"], \"use_cases\": [\"Full song creation\", \"Background music\", \"Content creators\", \"Prototyping\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "udio",
@@ -1498,7 +2014,13 @@
       "sota_rank": 2,
       "sota_rank_open": null,
       "metrics": "{\"notes\": \"#2 music generation, best for instrumentals and electronic music, high fidelity audio\", \"why_sota\": \"Superior instrumental quality, better for electronic/EDM genres\", \"strengths\": [\"Instrumentals\", \"Electronic music\", \"Audio fidelity\", \"Production quality\"], \"use_cases\": [\"Instrumentals\", \"EDM\", \"Background tracks\", \"Sound design\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "musicgen-large",
@@ -1512,7 +2034,13 @@
       "sota_rank": 3,
       "sota_rank_open": 1,
       "metrics": "{\"notes\": \"#1 open-source music, 3.3B params, text/melody to music, runs locally\", \"why_sota\": \"Best open-source quality, can condition on melody, local deployment\", \"strengths\": [\"Open-source\", \"Melody conditioning\", \"Local deployment\", \"Good quality\"], \"use_cases\": [\"Music prototyping\", \"Melody-based generation\", \"Research\", \"Local generation\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/facebook/musicgen-large",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "stable-audio-2",
@@ -1526,7 +2054,13 @@
       "sota_rank": 4,
       "sota_rank_open": 2,
       "metrics": "{\"notes\": \"#2 open-source music, up to 3-min stereo audio, diffusion-based\", \"why_sota\": \"Longest open-source generation (3 min), good stereo quality\", \"strengths\": [\"3-min generation\", \"Stereo output\", \"Diffusion quality\", \"Open-source\"], \"use_cases\": [\"Longer compositions\", \"Sound effects\", \"Ambient music\", \"Audio design\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/stabilityai/stable-audio-open-1.0",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "audiocraft-musicgen-melody",
@@ -1540,147 +2074,13 @@
       "sota_rank": 5,
       "sota_rank_open": 3,
       "metrics": "{\"notes\": \"#3 open-source music, melody-conditioned generation, AudioCraft family\", \"why_sota\": \"Best for transforming existing melodies into full arrangements\", \"strengths\": [\"Melody transformation\", \"Style transfer\", \"Arrangement\", \"Open-source\"], \"use_cases\": [\"Cover versions\", \"Style transfer\", \"Arrangement assistance\", \"Music education\"]}",
-      "last_updated": "2026-01-09 14:03:48"
-    },
-    {
-      "id": "pyannote-speaker-diarization-3.1",
-      "name": "pyannote/speaker-diarization-3.1",
-      "category": "stt",
-      "release_date": null,
-      "source": "auto",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 1,
-      "sota_rank": null,
-      "sota_rank_open": null,
-      "metrics": "{}",
-      "last_updated": "2026-01-09T09:10:33.955114"
-    },
-    {
-      "id": "openai-whisper-large-v3",
-      "name": "openai/whisper-large-v3",
-      "category": "stt",
-      "release_date": null,
-      "source": "auto",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 1,
-      "sota_rank": null,
-      "sota_rank_open": null,
-      "metrics": "{}",
-      "last_updated": "2026-01-09T09:10:33.955331"
-    },
-    {
-      "id": "jonatasgrosman-wav2vec2-large-xlsr-53-chinese-zh-cn",
-      "name": "jonatasgrosman/wav2vec2-large-xlsr-53-chinese-zh-cn",
-      "category": "stt",
-      "release_date": null,
-      "source": "auto",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 1,
-      "sota_rank": null,
-      "sota_rank_open": null,
-      "metrics": "{}",
-      "last_updated": "2026-01-09T09:10:33.955348"
-    },
-    {
-      "id": "jonatasgrosman-wav2vec2-large-xlsr-53-russian",
-      "name": "jonatasgrosman/wav2vec2-large-xlsr-53-russian",
-      "category": "stt",
-      "release_date": null,
-      "source": "auto",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 1,
-      "sota_rank": null,
-      "sota_rank_open": null,
-      "metrics": "{}",
-      "last_updated": "2026-01-09T09:10:33.955355"
-    },
-    {
-      "id": "jonatasgrosman-wav2vec2-large-xlsr-53-japanese",
-      "name": "jonatasgrosman/wav2vec2-large-xlsr-53-japanese",
-      "category": "stt",
-      "release_date": null,
-      "source": "auto",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 1,
-      "sota_rank": null,
-      "sota_rank_open": null,
-      "metrics": "{}",
-      "last_updated": "2026-01-09T09:10:33.955361"
-    },
-    {
-      "id": "jonatasgrosman-wav2vec2-large-xlsr-53-arabic",
-      "name": "jonatasgrosman/wav2vec2-large-xlsr-53-arabic",
-      "category": "stt",
-      "release_date": null,
-      "source": "auto",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 1,
-      "sota_rank": null,
-      "sota_rank_open": null,
-      "metrics": "{}",
-      "last_updated": "2026-01-09T09:10:33.955366"
-    },
-    {
-      "id": "mahmoudashraf-mms-300m-1130-forced-aligner",
-      "name": "MahmoudAshraf/mms-300m-1130-forced-aligner",
-      "category": "stt",
-      "release_date": null,
-      "source": "auto",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 1,
-      "sota_rank": null,
-      "sota_rank_open": null,
-      "metrics": "{}",
-      "last_updated": "2026-01-09T09:10:33.955372"
-    },
-    {
-      "id": "indonesian-nlp-wav2vec2-indonesian-javanese-sundanese",
-      "name": "indonesian-nlp/wav2vec2-indonesian-javanese-sundanese",
-      "category": "stt",
-      "release_date": null,
-      "source": "auto",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 1,
-      "sota_rank": null,
-      "sota_rank_open": null,
-      "metrics": "{}",
-      "last_updated": "2026-01-09T09:10:33.955377"
-    },
-    {
-      "id": "jonatasgrosman-wav2vec2-large-xlsr-53-portuguese",
-      "name": "jonatasgrosman/wav2vec2-large-xlsr-53-portuguese",
-      "category": "stt",
-      "release_date": null,
-      "source": "auto",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 1,
-      "sota_rank": null,
-      "sota_rank_open": null,
-      "metrics": "{}",
-      "last_updated": "2026-01-09T09:10:33.955382"
-    },
-    {
-      "id": "jonatasgrosman-wav2vec2-large-xlsr-53-polish",
-      "name": "jonatasgrosman/wav2vec2-large-xlsr-53-polish",
-      "category": "stt",
-      "release_date": null,
-      "source": "auto",
-      "source_url": null,
-      "is_sota": 1,
-      "is_open_source": 1,
-      "sota_rank": null,
-      "sota_rank_open": null,
-      "metrics": "{}",
-      "last_updated": "2026-01-09T09:10:33.955387"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/facebook/musicgen-melody",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "whisper-large-v3",
@@ -1694,7 +2094,13 @@
       "sota_rank": 1,
       "sota_rank_open": 1,
       "metrics": "{\"notes\": \"#1 STT overall, best accuracy across 99 languages, open-weights\", \"why_sota\": \"Lowest word error rate, handles accents/noise well, industry standard\", \"strengths\": [\"Accuracy\", \"99 languages\", \"Noise robustness\", \"Local deployment\"], \"use_cases\": [\"Transcription\", \"Meeting notes\", \"Subtitle generation\", \"Voice commands\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/openai/whisper-large-v3",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "canary-1b",
@@ -1708,7 +2114,13 @@
       "sota_rank": 2,
       "sota_rank_open": 2,
       "metrics": "{\"notes\": \"#2 STT, optimized for NVIDIA GPUs, fast inference with TensorRT\", \"why_sota\": \"Best performance on NVIDIA hardware, optimized for production\", \"strengths\": [\"NVIDIA optimized\", \"Fast inference\", \"TensorRT\", \"Production-ready\"], \"use_cases\": [\"Real-time transcription\", \"NVIDIA deployments\", \"Low-latency apps\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/nvidia/canary-1b",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "faster-whisper-large-v3",
@@ -1722,7 +2134,13 @@
       "sota_rank": 3,
       "sota_rank_open": 3,
       "metrics": "{\"notes\": \"#3 STT, CTranslate2 optimized Whisper, 4x faster than original\", \"why_sota\": \"Same accuracy as Whisper but 4x faster, lower memory usage\", \"strengths\": [\"4x faster\", \"Lower memory\", \"Same accuracy\", \"CPU efficient\"], \"use_cases\": [\"Batch processing\", \"CPU deployment\", \"Resource-constrained environments\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/Systran/faster-whisper-large-v3",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "deepgram-nova-3",
@@ -1736,7 +2154,13 @@
       "sota_rank": 4,
       "sota_rank_open": null,
       "metrics": "{\"notes\": \"#1 commercial STT API, real-time streaming, speaker diarization\", \"why_sota\": \"Best commercial API with real-time streaming and advanced features\", \"strengths\": [\"Real-time\", \"Streaming\", \"Speaker diarization\", \"API quality\"], \"use_cases\": [\"Call centers\", \"Live captioning\", \"Meeting transcription\", \"Enterprise\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "assemblyai-universal-2",
@@ -1750,7 +2174,13 @@
       "sota_rank": 5,
       "sota_rank_open": null,
       "metrics": "{\"notes\": \"#2 commercial STT API, best for long-form content, auto-chapters\", \"why_sota\": \"Best for podcasts/videos with automatic chapters and summaries\", \"strengths\": [\"Long-form content\", \"Auto-chapters\", \"Summaries\", \"Easy API\"], \"use_cases\": [\"Podcasts\", \"Videos\", \"Content creators\", \"Media processing\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "chatterbox-tts",
@@ -1764,7 +2194,13 @@
       "sota_rank": 1,
       "sota_rank_open": 1,
       "metrics": "{\"notes\": \"#1 open-source TTS, most natural prosody and emotion, runs locally\", \"why_sota\": \"Best naturalness in open-source, handles emotion and emphasis well\", \"strengths\": [\"Natural prosody\", \"Emotion\", \"Local deployment\", \"Fast inference\"], \"use_cases\": [\"Audiobooks\", \"Voice assistants\", \"Content creation\", \"Accessibility\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/ResembleAI/chatterbox",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "f5-tts",
@@ -1778,7 +2214,13 @@
       "sota_rank": 2,
       "sota_rank_open": 2,
       "metrics": "{\"notes\": \"#2 open-source TTS, best voice cloning from short samples (3-10s reference audio)\", \"why_sota\": \"Highest quality voice cloning with minimal reference audio needed\", \"strengths\": [\"Voice cloning\", \"Short reference audio\", \"Quality\", \"Multilingual\"], \"use_cases\": [\"Voice cloning\", \"Personalized TTS\", \"Character voices\", \"Dubbing\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/SWivid/F5-TTS",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "elevenlabs",
@@ -1792,7 +2234,13 @@
       "sota_rank": 3,
       "sota_rank_open": null,
       "metrics": "{\"notes\": \"#1 commercial TTS, best overall quality, instant voice cloning, many languages\", \"why_sota\": \"Highest quality output, best voice cloning, widest language support\", \"strengths\": [\"Quality\", \"Voice cloning\", \"Languages\", \"API ease\"], \"use_cases\": [\"Professional production\", \"Multilingual content\", \"Voice cloning\", \"Enterprise\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "bark",
@@ -1806,7 +2254,13 @@
       "sota_rank": 4,
       "sota_rank_open": 3,
       "metrics": "{\"notes\": \"#3 open-source TTS, generates speech + music + sound effects, highly expressive\", \"why_sota\": \"Most expressive open-source TTS, can generate non-speech audio\", \"strengths\": [\"Expressiveness\", \"Sound effects\", \"Music capability\", \"Creative\"], \"use_cases\": [\"Creative projects\", \"Sound design\", \"Expressive narration\", \"Games\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/suno/bark",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "coqui-xtts-v2",
@@ -1820,7 +2274,13 @@
       "sota_rank": 5,
       "sota_rank_open": 4,
       "metrics": "{\"notes\": \"#4 open-source TTS, 17 languages, cross-lingual voice cloning\", \"why_sota\": \"Best multilingual open-source with cross-lingual voice cloning\", \"strengths\": [\"17 languages\", \"Cross-lingual cloning\", \"Open-source\", \"Good quality\"], \"use_cases\": [\"Multilingual projects\", \"Voice cloning\", \"Localization\", \"International content\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/coqui/XTTS-v2",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "veo-3.1",
@@ -1834,7 +2294,13 @@
       "sota_rank": 1,
       "sota_rank_open": null,
       "metrics": "{\"notes\": \"#1 overall, 4K photorealism, native audio, trained on YouTube dataset\", \"why_sota\": \"Unmatched photorealism from massive YouTube training data, native audio generation\", \"strengths\": [\"Photorealism\", \"Physics accuracy\", \"Native audio\", \"Long coherence\"], \"use_cases\": [\"Professional video production\", \"Commercials\", \"Film VFX\", \"High-end content\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "runway-gen-4.5",
@@ -1848,7 +2314,13 @@
       "sota_rank": 2,
       "sota_rank_open": null,
       "metrics": "{\"notes\": \"#2 overall, native audio, 1-min multi-shot videos, character consistency across shots\", \"why_sota\": \"Best for professional workflows with multi-shot coherence and character tracking\", \"strengths\": [\"Multi-shot consistency\", \"Character tracking\", \"Native audio\", \"Professional UI\"], \"use_cases\": [\"Short films\", \"Music videos\", \"Ads with recurring characters\", \"Storyboarding\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "sora-2",
@@ -1862,7 +2334,13 @@
       "sota_rank": 3,
       "sota_rank_open": null,
       "metrics": "{\"notes\": \"#3 overall, native audio, 20s high-quality videos, cinematic camera control\", \"why_sota\": \"Best understanding of cinematic language, camera movements, and scene composition\", \"strengths\": [\"Cinematic quality\", \"Camera control\", \"Scene composition\", \"Native audio\"], \"use_cases\": [\"Cinematic shorts\", \"Concept visualization\", \"Creative exploration\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "kling-2.6",
@@ -1876,7 +2354,13 @@
       "sota_rank": 4,
       "sota_rank_open": null,
       "metrics": "{\"notes\": \"#4 overall, best human motion/expressions, 1080p, up to 3-min with extend feature\", \"why_sota\": \"Most realistic human movements, facial expressions, and lip sync\", \"strengths\": [\"Human motion\", \"Facial expressions\", \"Lip sync\", \"Length extension\"], \"use_cases\": [\"Talking head videos\", \"Human-centric content\", \"Virtual avatars\", \"Long-form content\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": null,
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "ltx-2",
@@ -1890,7 +2374,13 @@
       "sota_rank": 5,
       "sota_rank_open": 1,
       "metrics": "{\"notes\": \"#1 open-source, native audio, 4K 50fps, runs on 12GB VRAM (RTX 4090), fastest inference\", \"why_sota\": \"Best open-source with native audio, runs on consumer hardware, real-time capable\", \"strengths\": [\"Speed\", \"Native audio\", \"4K output\", \"Low VRAM\", \"RTX 4090 compatible\"], \"use_cases\": [\"Real-time generation\", \"High-volume production\", \"Consumer GPU workflows\", \"Prototyping\"], \"vram\": \"12GB\"}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/Lightricks/LTX-2",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "wan-2.2",
@@ -1904,7 +2394,13 @@
       "sota_rank": 6,
       "sota_rank_open": 2,
       "metrics": "{\"notes\": \"#2 open-source video (Alibaba Tongyi Wanxiang), MoE architecture, best human motion\", \"why_sota\": \"Highest quality human motion in open-source, sophisticated MoE architecture\", \"strengths\": [\"Human motion quality\", \"Natural movement\", \"Gesture accuracy\", \"Emotional expression\"], \"use_cases\": [\"Human-centric videos\", \"Dance/movement\", \"Character animation\", \"Realistic humans\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/alibaba-pai/Wan-2.2",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "hunyuan-video-1.5",
@@ -1918,7 +2414,13 @@
       "sota_rank": 7,
       "sota_rank_open": 3,
       "metrics": "{\"notes\": \"#3 open-source, 13B params, cinematic quality, excels at complex multi-object scenes\", \"why_sota\": \"Best at complex scenes with multiple interacting objects and characters\", \"strengths\": [\"Complex scenes\", \"Multi-object tracking\", \"Cinematic look\", \"Scene coherence\"], \"use_cases\": [\"Complex narratives\", \"Multi-character scenes\", \"Action sequences\", \"Detailed environments\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/tencent/HunyuanVideo",
+      "price_per_1m_input": null,
+      "elo_score": null
     },
     {
       "id": "wan-2.1-i2v",
@@ -1932,7 +2434,13 @@
       "sota_rank": 8,
       "sota_rank_open": 4,
       "metrics": "{\"notes\": \"#4 open-source video (Alibaba), image-to-video specialist, best creature/animal realism\", \"why_sota\": \"Unmatched creature animation and texture detail from static images\", \"strengths\": [\"Image-to-video\", \"Creature realism\", \"Texture detail\", \"Smooth motion\"], \"use_cases\": [\"Animating photos\", \"Creature/animal content\", \"Nature scenes\", \"Texture-heavy subjects\"]}",
-      "last_updated": "2026-01-09 14:03:48"
+      "last_updated": "2026-01-11 15:34:39",
+      "price_per_1m_output": null,
+      "humaneval_score": null,
+      "swebench_score": null,
+      "download_url": "https://huggingface.co/alibaba-pai/Wan-2.1-I2V",
+      "price_per_1m_input": null,
+      "elo_score": null
     }
   ]
 }
