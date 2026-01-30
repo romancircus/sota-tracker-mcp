@@ -1,5 +1,5 @@
 {
-  "current": "romancircus-workstation",
+  "current": "solapsvs",
   "profiles": {
     "romancircus-workstation": {
       "gpu": "RTX 5090",
@@ -10,6 +10,39 @@
         "uncensored": true,
         "local_first": true,
         "cost_sensitive": false
+      }
+    },
+    "test-profile": {
+      "gpu": "RTX 5090",
+      "vram_gb": 32,
+      "ram_gb": 16,
+      "cpu_threads": 4,
+      "preferences": {
+        "uncensored": true,
+        "local_first": true,
+        "cost_sensitive": true
+      }
+    },
+    "test": {
+      "gpu": "Unknown",
+      "vram_gb": 32,
+      "ram_gb": 16,
+      "cpu_threads": 4,
+      "preferences": {
+        "uncensored": false,
+        "local_first": true,
+        "cost_sensitive": true
+      }
+    },
+    "solapsvs": {
+      "gpu": "RTX 5090",
+      "vram_gb": 32,
+      "ram_gb": 64,
+      "cpu_threads": 16,
+      "preferences": {
+        "uncensored": true,
+        "local_first": true,
+        "cost_sensitive": true
       }
     }
   }
