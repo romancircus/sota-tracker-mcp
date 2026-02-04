@@ -20,7 +20,11 @@ from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from constants import DB_PATH, DATA_DIR
+# Define paths directly (avoid missing constants.py)
+PROJECT_DIR = Path(__file__).parent.parent
+DB_PATH = PROJECT_DIR / "data" / "sota.db"
+DATA_DIR = PROJECT_DIR / "data"
+
 from utils.models import normalize_model_id
 from utils.db import get_db_context
 from scrapers.lmarena import LMArenaScraper
@@ -41,7 +45,7 @@ def update_models_from_scrape(scraped_data: dict, source: str):
     updated = 0
     inserted = 0
 
-    with get_db_context() as db:
+    with get_db_context(DB_PATH) as db:
         for model in models:
             # Validate required field
             if "name" not in model:
@@ -128,7 +132,7 @@ def update_models_from_scrape(scraped_data: dict, source: str):
 
 def update_cache_status(category: str, source: str, success: bool, error: str = None):
     """Update cache status table."""
-    with get_db_context() as db:
+    with get_db_context(DB_PATH) as db:
         db.execute("""
             INSERT OR REPLACE INTO cache_status (category, last_fetched, fetch_source, fetch_success, error_message)
             VALUES (?, ?, ?, ?, ?)
@@ -144,7 +148,7 @@ def update_cache_status(category: str, source: str, success: bool, error: str = 
 
 def export_to_json():
     """Export all SOTA data to JSON."""
-    with get_db_context() as db:
+    with get_db_context(DB_PATH) as db:
         # Export all models
         rows = db.execute("""
             SELECT * FROM models WHERE is_sota = 1 ORDER BY category, sota_rank
@@ -168,7 +172,7 @@ def export_to_json():
 
 def export_to_csv():
     """Export all SOTA data to CSV."""
-    with get_db_context() as db:
+    with get_db_context(DB_PATH) as db:
         rows = db.execute("""
             SELECT id, name, category, is_open_source, sota_rank, release_date, source, last_updated
             FROM models WHERE is_sota = 1 ORDER BY category, sota_rank
