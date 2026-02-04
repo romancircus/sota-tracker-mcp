@@ -8,10 +8,10 @@ Auto-updated daily from [LMArena](https://lmarena.ai), [Artificial Analysis](htt
 
 AI models are released weekly. Keeping track is impossible. This project:
 
-1. **Scrapes authoritative sources** - LMArena Elo rankings, Artificial Analysis benchmarks
+1. **Curates authoritative data** - LMArena Elo rankings, manual curation for video/image/audio models
 2. **Updates daily** via GitHub Actions
-3. **Exports to JSON/CSV** - Use in your own projects
-4. **Provides an MCP server** - Claude/AI assistants can query directly
+3. **Exports to JSON/CSV/SQLite** - Use in your own projects
+4. **Provides multiple interfaces** - Static files, REST API, or MCP server
 
 ## Quick Start: Use the Data
 
@@ -31,16 +31,56 @@ cd sota-tracker-mcp
 
 # Query with sqlite3
 sqlite3 data/sota.db "SELECT name, sota_rank FROM models WHERE category='llm_api' ORDER BY sota_rank LIMIT 10"
+
+# List forbidden/outdated models
+sqlite3 data/sota.db "SELECT name, reason, replacement FROM forbidden"
 ```
 
-### Option 3: Use with Claude (MCP)
+### Option 3: Use with Claude Code (Recommended)
+
+The recommended approach for Claude Code users is **static file embedding** (lower token cost than MCP):
 
 ```bash
-# Install as MCP server
-claude mcp add --transport stdio --scope user sota-tracker \
-  -- python ~/sota-tracker-mcp/server.py
+# Set up daily auto-update of CLAUDE.md
+cp scripts/update_sota_claude_md.py ~/scripts/
 
-# Now Claude can query SOTA data directly!
+# Enable systemd timer (runs at 6 AM daily)
+systemctl --user enable --now sota-update.timer
+
+# Or run manually
+python ~/scripts/update_sota_claude_md.py --update
+```
+
+This embeds a compact SOTA summary directly in your `~/.claude/CLAUDE.md` file.
+
+### Option 4: REST API
+
+```bash
+# Start the API server
+uvicorn rest_api:app --host 0.0.0.0 --port 8000
+
+# Query endpoints
+curl "http://localhost:8000/api/v1/models?category=llm_api"
+curl "http://localhost:8000/api/v1/forbidden"
+curl "http://localhost:8000/api/v1/models/FLUX.1-dev/freshness"
+```
+
+### Option 5: MCP Server (Optional)
+
+MCP support is available but disabled by default (higher token cost). To enable:
+
+```bash
+# Edit .mcp.json to add the server config
+cat > .mcp.json << 'EOF'
+{
+  "mcpServers": {
+    "sota-tracker": {
+      "command": "python",
+      "args": ["server.py"]
+    }
+  }
+}
+EOF
 ```
 
 ## Data Sources
@@ -50,34 +90,33 @@ claude mcp add --transport stdio --scope user sota-tracker \
 | [LMArena](https://lmarena.ai/leaderboard) | LLM Elo rankings (6M+ human votes) | Daily |
 | [Artificial Analysis](https://artificialanalysis.ai) | LLM benchmarks, pricing, speed | Daily |
 | [HuggingFace](https://huggingface.co) | Model downloads, trending | Daily |
-| Manual curation | Video, Image, Audio models | As needed |
+| Manual curation | Video, Image, Audio, Video2Audio models | As needed |
 
 ## Categories
 
-| Category | Description | Top Models (Jan 2026) |
+| Category | Description | Top Models (Feb 2026) |
 |----------|-------------|----------------------|
 | `llm_api` | Cloud LLM APIs | Gemini 3 Pro, Grok 4.1, Claude Opus 4.5 |
 | `llm_local` | Local LLMs (GGUF) | Qwen3, Llama 3.3, DeepSeek-V3 |
 | `llm_coding` | Code-focused LLMs | Qwen3-Coder, DeepSeek-V3 |
-| `image_gen` | Image generation | GPT Image 1.5, Z-Image-Turbo |
-| `video` | Video generation | Veo 3.1, LTX-2 |
-| `tts` | Text-to-speech | ChatterboxTTS, ElevenLabs |
+| `image_gen` | Image generation | Z-Image-Turbo, FLUX.2-dev, Qwen-Image |
+| `video` | Video generation | LTX-2, Wan 2.2, HunyuanVideo 1.5 |
+| `video2audio` | Video-to-audio (foley) | MMAudio V2 Large |
+| `tts` | Text-to-speech | ChatterboxTTS, F5-TTS |
 | `stt` | Speech-to-text | Whisper Large v3 |
 | `embeddings` | Vector embeddings | BGE-M3 |
 
-## MCP Tools
+## REST API Endpoints
 
-When installed as an MCP server, Claude can use these tools:
-
-| Tool | Description |
-|------|-------------|
-| `query_sota(category)` | Get current SOTA for a category |
-| `check_freshness(model)` | Check if a model is current or outdated |
-| `get_forbidden()` | List outdated models to avoid |
-| `compare_models(a, b)` | Compare two models side-by-side |
-| `recent_releases(days)` | Models released in past N days |
-| `refresh_data()` | Force refresh from sources |
-| `cache_status()` | Check data freshness |
+| Endpoint | Description |
+|----------|-------------|
+| `GET /api/v1/models?category=X` | Get SOTA for a category |
+| `GET /api/v1/models/:name/freshness` | Check if model is current or outdated |
+| `GET /api/v1/forbidden` | List outdated models to avoid |
+| `GET /api/v1/compare?model_a=X&model_b=Y` | Compare two models |
+| `GET /api/v1/recent?days=30` | Models released in past N days |
+| `GET /api/v1/recommend?task=chat` | Get recommendation for a task |
+| `GET /health` | Health check |
 
 ## Run Your Own Scraper
 
@@ -111,14 +150,14 @@ To enable on your fork:
 
 ```
 sota-tracker-mcp/
-├── server.py                    # MCP server
-├── init_db.py                   # Database initialization
+├── server.py                    # MCP server (optional)
+├── rest_api.py                  # REST API server
+├── init_db.py                   # Database initialization + seeding
 ├── requirements.txt             # Dependencies
 ├── data/
 │   ├── sota.db                  # SQLite database
 │   ├── sota_export.json         # Full JSON export
 │   ├── sota_export.csv          # CSV export
-│   ├── lmarena_latest.json      # Raw LMArena data
 │   └── forbidden.json           # Outdated models list
 ├── scrapers/
 │   ├── lmarena.py               # LMArena scraper (Playwright)
@@ -139,12 +178,63 @@ Found a model that's missing or incorrectly ranked?
 2. **For scraper improvements**: Edit files in `scrapers/`
 3. **For new data sources**: Add a new scraper and update `run_all.py`
 
-## API Endpoints (Coming Soon)
+See [CONTRIBUTING.md](CONTRIBUTING.md) for full developer setup and PR process.
 
-Planning to add a simple REST API:
-- `GET /api/v1/models?category=llm_api`
-- `GET /api/v1/models/:id`
-- `GET /api/v1/rankings?source=lmarena`
+## OpenCode / Agents.md Integration
+
+The repo now supports updating `agents.md` files for OpenCode agents:
+
+```bash
+# Update your agents.md with latest SOTA data
+python update_agents_md.py
+
+# Minimal version (top 1 model per category, lightweight)
+python update_agents_md.py --minimal
+
+# Custom categories and limit
+python update_agents_md.py --categories llm_local image_gen --limit 3
+
+# Force refresh from sources first
+python update_agents_md.py --refresh
+```
+
+### Automation
+
+Add to your cron or systemd timer for daily updates:
+
+```cron
+# ~: crontab -e
+@daily python ~/Apps/sota-tracker-mcp/update_agents_md.py
+```
+
+Or systemd:
+
+```bash
+# ~/.config/systemd/user/sota-update.service
+[Unit]
+Description=Update SOTA models for agents
+After=network.target
+
+[Service]
+ExecStart=%h/Apps/sota-tracker-mcp/update_agents_md.py
+
+[Install]
+WantedBy=default.target
+
+# ~/.config/systemd/user/sota-update.timer
+[Unit]
+Description=Daily SOTA data update
+OnCalendar=daily
+AccuracySec=1h
+
+[Install]
+WantedBy=timers.target
+
+# Enable
+systemctl --user enable --now sota-update.timer
+```
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for full setup guide
 
 ## Data Attribution & Legal
 
@@ -170,7 +260,7 @@ This project aggregates **publicly available benchmark data** from third-party s
 
 This project:
 - Aggregates factual data (not copyrightable)
-- Adds value through tooling (MCP server, unified format)
+- Adds value through tooling (API server, unified format, forbidden list)
 - Attributes all sources with links
 - Does not compete commercially with sources
 - Respects robots.txt permissions

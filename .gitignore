@@ -37,6 +37,10 @@ debug_*.json
 # Each user has their own hardware/preferences
 data/hardware_profiles.json
 
+# Test files
+test_*.md
+*_test.md
+
 # NOTE: We DO commit these files (they're the point of the project):
 # - data/sota.db
 # - data/sota_export.json
